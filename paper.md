@@ -953,6 +953,229 @@ Under this hypothesis, successful long-term collaboration depends less on mainta
 
 The case studies presented in Chapter 8 provide empirical examples supporting this hypothesis.
 
+
+# 6. Token Constraints and Context Loss
+
+## 6.1 Introduction
+
+Long-term Human-AI collaboration is constrained not only by human memory limitations but also by the computational limitations of AI systems.
+
+One of the most significant constraints observed during the research program was token availability.
+
+Token limitations directly affected:
+
+- Conversation length
+- Context retention
+- Repository analysis
+- Document processing
+- Research continuity
+
+This chapter examines how token constraints influenced collaboration and how researchers adapted to these limitations.
+
+---
+
+## 6.2 Token Constraints as Research Constraints
+
+Token limits are often viewed as technical restrictions.
+
+However, observations from this study suggest a broader interpretation.
+
+In practice, token limitations functioned as research constraints.
+
+When token resources became limited, researchers were forced to:
+
+- End conversations
+- Compress information
+- Create summaries
+- Transfer context
+- Reconstruct lost knowledge
+
+Consequently, token limitations influenced both the pace and structure of research activities.
+
+---
+
+## 6.3 Context Loss
+
+Context loss occurred whenever information could no longer be efficiently accessed within an active interaction.
+
+Common causes included:
+
+### Session Boundaries
+
+Research conversations ending before completion.
+
+### Context Window Limits
+
+Older information becoming inaccessible during long discussions.
+
+### AI System Changes
+
+Transitions between different AI systems.
+
+### Repository Growth
+
+Research assets becoming too large to review in a single interaction.
+
+These factors repeatedly disrupted research continuity.
+
+---
+
+## 6.4 The Cost of Context Reconstruction
+
+One of the most important observations was that rebuilding context often required substantial effort.
+
+Context reconstruction commonly involved:
+
+- Reviewing repositories
+- Reading README files
+- Examining handover documents
+- Revisiting previous discussions
+- Re-establishing research objectives
+
+In some cases, reconstructing context required more effort than generating new content.
+
+This suggests that context reconstruction should be treated as a major research activity rather than an administrative task.
+
+---
+
+## 6.5 Compression Strategies
+
+To reduce reconstruction costs, multiple compression strategies emerged.
+
+### README-Based Compression
+
+Repository READMEs condensed large amounts of information into accessible summaries.
+
+### Handover-Based Compression
+
+AI handover documents captured essential project knowledge.
+
+### Portfolio-Based Compression
+
+Research portfolio repositories summarized relationships among projects.
+
+### Status Reports
+
+Periodic summaries preserved the current state of research.
+
+These compression artifacts enabled efficient transfer of large amounts of context.
+
+---
+
+## 6.6 Repository Analysis and Token Consumption
+
+Repository analysis frequently required significant token resources.
+
+Typical workflow included:
+
+- Reading file names
+- Inspecting repository structures
+- Reviewing documentation
+- Analyzing relationships among repositories
+- Generating summaries
+
+As repository size increased, the token cost of analysis increased as well.
+
+This created an incentive to improve repository organization and documentation quality.
+
+Well-structured repositories reduced token consumption during context reconstruction.
+
+---
+
+## 6.7 Images, Documents, and Token Usage
+
+The research program also involved analysis of images, repository screenshots, and large document collections.
+
+A recurring observation was that AI systems often performed iterative cycles such as:
+
+- Reading image lists
+- Examining file names
+- Matching files to content
+- Rechecking repository structures
+- Verifying interpretations
+
+These repeated operations consumed substantial token resources.
+
+As a result, efficient documentation frequently reduced overall token expenditure.
+
+---
+
+## 6.8 Token Exhaustion and Workflow Adaptation
+
+Repeated encounters with token limitations led to workflow adaptations.
+
+Examples included:
+
+### Creating Summaries Before Context Expired
+
+Important observations were documented before conversation limits were reached.
+
+### Building Persistent Repositories
+
+Knowledge was moved into repositories rather than remaining inside conversations.
+
+### Maintaining Handover Documents
+
+Transfer documents reduced reconstruction costs after interruptions.
+
+### Preserving Key Insights
+
+Important discoveries were explicitly externalized into memory artifacts.
+
+These adaptations gradually became standard components of the research process.
+
+---
+
+## 6.9 Context Preservation as Optimization
+
+An important observation was that preserving context often reduced future token consumption.
+
+For example:
+
+Poor Documentation
+→ Large Reconstruction Cost
+→ High Token Usage
+
+Good Documentation
+→ Small Reconstruction Cost
+→ Lower Token Usage
+
+Thus, documentation quality directly influenced collaboration efficiency.
+
+Context preservation functioned as an optimization strategy rather than merely a record-keeping activity.
+
+---
+
+## 6.10 Token Constraints and Externalized Memory
+
+Token limitations contributed directly to the emergence of Externalized Memory practices.
+
+Because neither humans nor AI systems could reliably retain all research context internally, external artifacts became necessary.
+
+Examples included:
+
+- Repositories
+- README files
+- Handover documents
+- Research logs
+- Reminder systems
+
+These artifacts allowed context to survive beyond active conversations.
+
+As a result, token constraints became a driving force behind the development of distributed research memory systems.
+
+---
+
+## 6.11 Token Constraint Hypothesis
+
+Based on the observations presented in this chapter, the following hypothesis is proposed.
+
+> As research duration increases, the cost of context reconstruction becomes a dominant factor in Human-AI collaboration.
+
+Under this hypothesis, successful long-term research depends not only on generating knowledge but also on minimizing the cost of restoring that knowledge after interruptions.
+
+Consequently, documentation, repositories, handovers, and external memory systems become essential components of sustainable Human-AI collaboration.
+
 # 7. Building a Long-Term Research Program
 
 ## 7.1 Introduction
