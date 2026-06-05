@@ -122,6 +122,214 @@ Chapter 9 discusses the implications of these observations for Human-AI collabor
 
 Finally, Chapter 10 summarizes the findings and proposes directions for future work.
 
+# 2. Background
+
+## 2.1 Human-AI Collaboration
+
+Recent advances in Large Language Models (LLMs) have enabled new forms of Human-AI collaboration.
+
+AI systems are increasingly used for:
+
+- Writing assistance
+- Software development
+- Data analysis
+- Research support
+- Knowledge management
+
+Most existing discussions focus on task completion, productivity gains, or conversational performance.
+
+However, relatively little attention has been given to long-term research collaboration extending across multiple sessions, repositories, and AI systems.
+
+This study focuses specifically on that long-term perspective.
+
+---
+
+## 2.2 Context Window Limitations
+
+Modern AI systems operate within finite context windows.
+
+As conversations become longer, earlier information may become unavailable or difficult to recover.
+
+This creates challenges for long-term projects.
+
+Examples include:
+
+- Loss of historical decisions
+- Repeated explanations
+- Reconstructed reasoning
+- Context fragmentation
+
+As project duration increases, context preservation becomes increasingly important.
+
+The present study treats context limitations not merely as technical constraints but as collaboration constraints.
+
+---
+
+## 2.3 Knowledge Preservation
+
+Long-term research depends on the preservation of knowledge.
+
+Historically, researchers have relied on:
+
+- Laboratory notebooks
+- Research journals
+- Technical reports
+- Reference archives
+
+These artifacts preserve information beyond the limits of human memory.
+
+The emergence of AI-assisted research introduces new challenges because knowledge must now be preserved not only for humans but also for AI systems participating in the research process.
+
+---
+
+## 2.4 Repository-Based Research
+
+Software engineering has long relied on repositories for preserving code and project history.
+
+Repositories provide:
+
+- Persistent storage
+- Version control
+- Collaboration support
+- Historical traceability
+
+In this study, repositories expanded beyond their traditional role.
+
+GitHub repositories became:
+
+- Knowledge archives
+- Research memory systems
+- Handover platforms
+- Collaboration interfaces
+
+As a result, repository infrastructure played a central role in sustaining research continuity.
+
+---
+
+## 2.5 Human-AI Memory Asymmetry
+
+Humans and AI systems possess fundamentally different memory characteristics.
+
+Human researchers typically possess:
+
+### Strengths
+
+- Long-term experiential memory
+- Intuition
+- Goal persistence
+- Conceptual understanding
+
+### Limitations
+
+- Forgetting
+- Incomplete recall
+- Cognitive overload
+
+AI systems typically possess:
+
+### Strengths
+
+- Rapid retrieval within active context
+- Large-scale text processing
+- Pattern recognition
+
+### Limitations
+
+- Session boundaries
+- Context window limits
+- Lack of persistent memory
+
+Long-term collaboration therefore requires mechanisms that compensate for both types of limitations.
+
+---
+
+## 2.6 Multi-Agent Research Environments
+
+The research program examined in this study involved multiple AI systems.
+
+Examples included:
+
+- ChatGPT
+- Claude
+- ANTIGRAVITY
+
+Each system participated at different stages of the research process.
+
+The involvement of multiple AI systems introduced additional challenges:
+
+- Context transfer
+- Knowledge consistency
+- Handover management
+- Documentation quality
+
+These challenges motivated the development of structured collaboration practices.
+
+---
+
+## 2.7 From Information Storage to Context Transfer
+
+Traditional knowledge management often focuses on information storage.
+
+However, observations from this study suggest that storage alone is insufficient.
+
+The critical problem is not whether information exists.
+
+The critical problem is whether context can be restored when needed.
+
+As a result, the study emphasizes Context Transfer rather than simple information retention.
+
+Under this perspective:
+
+- README files
+- Research logs
+- Handover documents
+- Repository structures
+- Reminder systems
+
+are viewed primarily as context transfer mechanisms.
+
+---
+
+## 2.8 Research Gap
+
+Existing Human-AI collaboration literature frequently investigates:
+
+- Task performance
+- User satisfaction
+- Prompt engineering
+- Human oversight
+
+However, fewer studies examine:
+
+- Long-term collaboration
+- Research continuity
+- AI-to-AI handover
+- Future-self collaboration
+- Repository-centered research workflows
+- Distributed research memory
+
+The present study addresses this gap through a case study of a multi-repository, multi-AI research program.
+
+---
+
+## 2.9 Conceptual Foundation
+
+Three concepts provide the foundation for this study.
+
+### Externalized Memory
+
+Research context preserved outside both human memory and active AI context.
+
+### Distributed Research Memory
+
+Research memory distributed across humans, AI systems, repositories, and artifacts.
+
+### Context Transfer
+
+The process through which research context moves across time, sessions, systems, and collaborators.
+
+These concepts are developed further in subsequent chapters.
+
 # 4. Externalized Memory
 
 ## 4.1 The Memory Problem
