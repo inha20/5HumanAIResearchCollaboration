@@ -1,3 +1,17 @@
+# Abstract
+
+Long-term Human-AI collaboration presents challenges that extend beyond the capabilities of either human memory or AI memory alone. While recent research has focused primarily on model performance, prompt engineering, and short-term task completion, relatively little attention has been given to research continuity across extended periods of time.
+
+This study investigates long-term Human-AI research collaboration through a multi-repository research program involving multiple AI systems, repository infrastructure, documentation artifacts, and external memory mechanisms. The study is based on observations collected during the development of a research program consisting of interconnected repositories, including mathematical theory development, structure recognition research, and Human-AI collaboration analysis.
+
+The findings suggest that successful long-term collaboration depends heavily on the preservation, restoration, and transfer of research context. Several key concepts emerged during the study, including Externalized Memory, Distributed Research Memory, Context Transfer, Human-AI Working Agreements, and Future-Self Collaboration. Together, these concepts describe mechanisms through which research continuity can be maintained despite context-window limitations, token constraints, session boundaries, and transitions between AI systems.
+
+The study further examines repository-centered research workflows, AI-to-AI handover practices, and the role of documentation as a context transfer mechanism rather than a simple storage medium. The results indicate that research continuity emerges from interactions among humans, AI systems, repositories, documentation artifacts, and reminder systems rather than from any single memory source.
+
+Based on these observations, the study proposes that long-term Human-AI collaboration is fundamentally a problem of research continuity. Effective collaboration depends not on perfect memory, but on the construction of systems that preserve and transfer context across time, sessions, and participants.
+
+Keywords: Human-AI Collaboration, Externalized Memory, Distributed Research Memory, Context Transfer, AI-to-AI Handover, Research Continuity, Knowledge Management, Long-Term Research Programs
+
 # 1. Introduction
 
 ## 1.1 Motivation
