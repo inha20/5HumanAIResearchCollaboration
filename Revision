@@ -1,0 +1,117 @@
+Continuity Framework Revision Problem 
+
+The current paper introduces multiple concepts:
+
+Externalized Memory Context Transfer AI-to-AI Handover Distributed Research Memory Human-AI Working Agreements Future-Self Collaboration 
+
+Each concept is individually described.
+
+However, the relationships among these concepts remain partially implicit.
+
+As a result, the paper sometimes reads as a collection of observations rather than a unified theoretical framework.
+
+Proposed Hierarchy 
+
+The concepts can be organized into the following structure.
+
+Research Continuity │ ├── Memory Repositories │ ├── Repositories │ ├── README Files │ ├── Research Logs │ ├── Handover Documents │ └── Reminder Systems │ ├── Context Transfer │ ├── Human → Human │ ├── Human → AI │ ├── AI → Human │ ├── AI → AI │ └── Present Self → Future Self │ ├── Collaboration Protocols │ ├── Discovery Triggers │ ├── Preservation Triggers │ ├── Gap Detection Triggers │ ├── Proposal Triggers │ └── Integration Triggers │ └── Distributed Research Memory
+
+Under this framework, the individual concepts become components of a larger continuity system.
+
+Memory Repository Theory 
+
+The study originally describes repositories, documents, and reminders as forms of Externalized Memory.
+
+A stronger formulation is possible.
+
+Definition:
+
+A Memory Repository is any artifact capable of preserving research context and supporting future context restoration.
+
+This definition includes:
+
+GitHub repositories README files Research notes Reminder systems Project memories Handover files 
+
+The important characteristic is not storage itself.
+
+The important characteristic is recoverability.
+
+Memory repositories succeed when they reduce reconstruction cost.
+
+Future-Self Collaboration Theory 
+
+A major observation from the research program is that future versions of the researcher frequently act as indirect collaborators.
+
+The collaboration process often follows the pattern:
+
+Present Self ↓ Memory Repository ↓ Future Self
+
+The repository is not merely a storage system.
+
+It is a communication channel across time.
+
+Under this interpretation, documentation serves two functions simultaneously:
+
+Knowledge preservation Future-self communication 
+
+This distinction is important because it shifts documentation from passive storage to active collaboration.
+
+Collaboration Protocol Theory 
+
+Repeated Human-AI interaction produced stable collaboration protocols.
+
+Observed examples include:
+
+Discovery 
+
+"또 날 위해 출력해줄 거 있어?"
+
+Preservation 
+
+"저장할 거 저장해줘."
+
+Gap Detection 
+
+"지금 내가 놓치고 있는 것은?"
+
+Integration 
+
+"연구 프로그램 관점에서 보면?"
+
+Proposal 
+
+"이건 어때?"
+
+Readiness 
+
+"준비됐어?"
+
+These prompts became procedural tools.
+
+The prompts consistently activated specific collaborative behaviors.
+
+Therefore, they should be interpreted as protocol mechanisms rather than conversational habits.
+
+Revised Main Claim 
+
+The original paper argues:
+
+Long-term Human-AI collaboration is fundamentally a problem of research continuity.
+
+This revision proposes a more precise formulation.
+
+Research continuity emerges when context is preserved in memory repositories, transferred through artifacts, and restored through stable collaboration protocols.
+
+Externalized Memory, AI-to-AI Handover, Future-Self Collaboration, and Distributed Research Memory can therefore be interpreted as components of a unified continuity framework.
+
+Predicted Impact 
+
+If adopted, this framework would transform the paper from:
+
+"Observations about Human-AI collaboration"
+
+into:
+
+"A theory explaining how long-term Human-AI collaboration remains possible despite memory limitations."
+
+
