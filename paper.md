@@ -1,3 +1,127 @@
+# 1. Introduction
+
+## 1.1 Motivation
+
+Recent advances in Large Language Models (LLMs) have enabled new forms of Human-AI collaboration.
+
+Most existing discussions focus on short-term interactions, task completion, or isolated conversations.
+
+However, many real-world research projects extend across months or years and require continuity beyond a single session.
+
+In such environments, neither human memory nor AI memory alone is sufficient to preserve the complete research context.
+
+This raises a fundamental question:
+
+> How can humans and AI systems collaborate effectively in long-term research programs?
+
+The present study emerged from a multi-repository research program involving mathematical theory development, repository-based knowledge management, and collaboration with multiple AI systems.
+
+Throughout this process, challenges related to memory preservation, context loss, token limitations, and AI transitions repeatedly appeared.
+
+These observations motivated a systematic investigation of long-term Human-AI collaboration.
+
+---
+
+## 1.2 Research Problem
+
+Long-term research differs significantly from short-term problem solving.
+
+Research continuity requires the preservation and restoration of knowledge across:
+
+- Time
+- Sessions
+- Devices
+- Repositories
+- AI systems
+
+Existing AI systems operate within finite context windows and are unable to maintain complete long-term memory.
+
+Human researchers face similar limitations due to forgetting, interruptions, and cognitive constraints.
+
+As a result, long-term collaboration requires mechanisms that extend beyond the memory capabilities of individual participants.
+
+This study investigates how such mechanisms emerge and how they support research continuity.
+
+---
+
+## 1.3 Research Questions
+
+This study addresses the following questions.
+
+### RQ1
+
+How can research context be preserved across long-term Human-AI collaboration?
+
+### RQ2
+
+How can context be transferred across different AI systems, sessions, and time periods?
+
+### RQ3
+
+What role do repositories, documentation, and handover artifacts play in research continuity?
+
+### RQ4
+
+How do collaboration protocols emerge during long-term Human-AI interaction?
+
+---
+
+## 1.4 Contributions
+
+This study makes four primary contributions.
+
+### Contribution 1
+
+It presents a real-world case study of long-term Human-AI collaboration conducted over multiple repositories and AI systems.
+
+### Contribution 2
+
+It introduces the concept of Externalized Memory as a framework for understanding context preservation beyond human and AI memory.
+
+### Contribution 3
+
+It identifies Human-AI Working Agreements as recurring collaboration protocols that support memory preservation and context recovery.
+
+### Contribution 4
+
+It proposes a model of Distributed Research Memory in which research knowledge is distributed across humans, AI systems, repositories, documentation, and reminder systems.
+
+---
+
+## 1.5 Scope
+
+This study does not attempt to evaluate the intelligence of AI systems.
+
+Instead, it focuses on collaboration processes.
+
+The primary objective is to understand how research continuity can be achieved despite memory limitations and context fragmentation.
+
+Accordingly, the emphasis is placed on:
+
+- Knowledge preservation
+- Context transfer
+- Collaboration protocols
+- Repository-based research management
+- Long-term Human-AI interaction
+
+rather than model performance benchmarks.
+
+---
+
+## 1.6 Overview of the Study
+
+The remainder of this paper is organized as follows.
+
+Chapter 4 introduces the concept of Externalized Memory.
+
+Chapter 7 describes the architecture of long-term research programs.
+
+Chapter 8 presents empirical case studies collected during the development of the Minor Thesis research program.
+
+Chapter 9 discusses the implications of these observations for Human-AI collaboration research.
+
+Finally, Chapter 10 summarizes the findings and proposes directions for future work.
+
 # 4. Externalized Memory
 
 ## 4.1 The Memory Problem
