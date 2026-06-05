@@ -556,3 +556,193 @@ Repositories, documents, project memories, reminders, and handover files collect
 Within this system, context was transferred through artifacts rather than retained exclusively within either the human researcher or AI systems.
 
 This observation became one of the central motivations for the Human-AI Research Collaboration study.
+
+# 9. Discussion
+
+## 9.1 Overview
+
+The case studies presented in this research suggest that long-term Human-AI collaboration is not primarily a problem of intelligence.
+
+Instead, it is largely a problem of memory, context preservation, and coordination.
+
+The findings indicate that successful collaboration depends on the ability to preserve and transfer research context across time, sessions, repositories, and AI systems.
+
+---
+
+## 9.2 Beyond Context Windows
+
+Most discussions surrounding Large Language Models focus on context window size.
+
+However, the observations presented in this study suggest that context windows alone are insufficient for long-term research.
+
+Even very large context windows eventually encounter limitations.
+
+As research duration increases, preserving context requires mechanisms that exist outside the active conversation.
+
+This shifts the focus from context storage to context restoration.
+
+The critical question becomes:
+
+> How can lost context be reconstructed efficiently?
+
+rather than:
+
+> How much context can be stored at once?
+
+---
+
+## 9.3 Externalized Memory as Infrastructure
+
+The results suggest that Externalized Memory should be viewed as infrastructure rather than documentation.
+
+Repositories, README files, handover documents, research logs, and reminder systems did not merely record research progress.
+
+They actively enabled future research progress.
+
+Without these artifacts, substantial portions of research context would have been lost.
+
+Therefore, Externalized Memory functioned as an operational component of the research process.
+
+---
+
+## 9.4 Human-AI Working Agreements
+
+A notable observation was the emergence of recurring collaboration protocols.
+
+Examples included prompts such as:
+
+- "또 날 위해 출력해줄 거 있어?"
+- "지금 내가 놓치고 있는 것은?"
+- "연구 프로그램 관점에서 보면?"
+- "저장할 거 저장해줘."
+
+These interactions evolved into procedural mechanisms for:
+
+- Context recovery
+- Knowledge preservation
+- Research planning
+- Gap identification
+
+This suggests that effective collaboration depends not only on memory artifacts but also on stable interaction protocols.
+
+Future Human-AI collaboration systems may benefit from explicitly supporting such protocols.
+
+---
+
+## 9.5 Future-Self as a Research Participant
+
+Traditional collaboration research assumes collaboration among contemporaneous participants.
+
+The present study suggests an additional form of collaboration.
+
+The future version of the researcher frequently became a recipient of information created in the present.
+
+README files, research logs, handover documents, and reminders were often written with the explicit purpose of assisting future research activities.
+
+Consequently, collaboration occurred across time as well as across individuals and systems.
+
+This observation expands the notion of collaboration beyond simultaneous interaction.
+
+---
+
+## 9.6 Distributed Research Memory
+
+The research program demonstrated characteristics of a distributed memory system.
+
+Memory was distributed across:
+
+- Human researchers
+- AI systems
+- GitHub repositories
+- Documentation artifacts
+- Reminder systems
+
+No individual component contained the complete research context.
+
+Instead, continuity emerged from the interactions among components.
+
+This resembles distributed information systems in which reliability depends on network structure rather than a single storage location.
+
+---
+
+## 9.7 Implications for Human-AI Collaboration
+
+The findings suggest several implications.
+
+### Research Systems
+
+Future research environments should support:
+
+- Persistent documentation
+- Structured handovers
+- Context restoration workflows
+- Multi-AI collaboration
+
+### AI Design
+
+Future AI systems may benefit from features that support:
+
+- Long-term context preservation
+- Collaboration protocol recognition
+- Artifact-based memory integration
+- Cross-session continuity
+
+### Knowledge Management
+
+Knowledge management should be viewed as a core component of Human-AI collaboration rather than a secondary administrative task.
+
+---
+
+## 9.8 Limitations
+
+Several limitations should be acknowledged.
+
+First, the observations are based on a single long-term research program.
+
+Second, the collaboration environment involved specific AI systems and tools.
+
+Third, many observations emerged naturally rather than through controlled experimentation.
+
+As a result, the findings should currently be interpreted as exploratory rather than definitive.
+
+Future studies involving additional researchers, AI systems, and research domains will be necessary.
+
+---
+
+## 9.9 Future Research Directions
+
+Several future research directions emerge from this work.
+
+### Formal Models of Externalized Memory
+
+Developing theoretical models that describe context transfer across humans, AI systems, and artifacts.
+
+### Human-AI Collaboration Protocols
+
+Investigating recurring interaction patterns as formal collaboration mechanisms.
+
+### AI-to-AI Handover Systems
+
+Studying structured methods for transferring research context between AI systems.
+
+### Distributed Research Memory
+
+Exploring memory architectures that integrate repositories, documentation, reminders, and AI systems into a unified framework.
+
+### Long-Term Research Programs
+
+Examining how Human-AI collaboration influences research programs that extend across months or years.
+
+---
+
+## 9.10 Main Claim
+
+The central claim of this study is not that AI systems possess perfect memory.
+
+Nor is it that human researchers possess sufficient memory to sustain long-term projects unaided.
+
+Instead, the evidence suggests that long-term Human-AI collaboration becomes possible when memory is externalized, preserved, and transferred through persistent artifacts and stable collaboration protocols.
+
+Under this view, research continuity emerges not from any single participant but from the structure connecting all participants.
+
+
