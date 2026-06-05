@@ -1740,4 +1740,172 @@ Instead, the evidence suggests that long-term Human-AI collaboration becomes pos
 
 Under this view, research continuity emerges not from any single participant but from the structure connecting all participants.
 
+# 10. Conclusion
+
+## 10.1 Summary
+
+This study investigated long-term Human-AI research collaboration through a multi-repository research program involving multiple AI systems, repository infrastructure, documentation artifacts, and persistent knowledge management practices.
+
+The findings suggest that the primary challenge of long-term collaboration is not intelligence alone.
+
+Instead, long-term collaboration depends heavily on:
+
+- Memory preservation
+- Context transfer
+- Knowledge continuity
+- Collaboration protocols
+- Research infrastructure
+
+Throughout the research program, these factors repeatedly influenced the ability to sustain progress across time.
+
+---
+
+## 10.2 Main Findings
+
+Several major observations emerged.
+
+### Finding 1: Memory Exists Beyond Individuals
+
+Research context was frequently preserved outside both human memory and AI memory.
+
+Repositories, documents, logs, reminders, and handover files collectively functioned as memory systems.
+
+This led to the concept of Externalized Memory.
+
+---
+
+### Finding 2: Context Transfer Is More Important Than Context Storage
+
+The central challenge was rarely storing information.
+
+Instead, the challenge was restoring and transferring context when needed.
+
+README files, handover documents, research summaries, and repository structures were most valuable when they enabled efficient context reconstruction.
+
+---
+
+### Finding 3: Research Memory Becomes Distributed
+
+Research continuity emerged from interactions among multiple components.
+
+These included:
+
+- Human researchers
+- AI systems
+- Repositories
+- Documentation artifacts
+- Reminder systems
+
+No single component contained the complete research context.
+
+Instead, memory became distributed throughout the research environment.
+
+This observation motivated the concept of Distributed Research Memory.
+
+---
+
+### Finding 4: Collaboration Protocols Matter
+
+Long-term collaboration produced recurring interaction patterns.
+
+Examples included prompts such as:
+
+- "또 날 위해 출력해줄 거 있어?"
+- "지금 내가 놓치고 있는 것은?"
+- "연구 프로그램 관점에서 보면?"
+- "저장할 거 저장해줘."
+
+These interactions evolved into stable collaboration mechanisms supporting:
+
+- Context recovery
+- Knowledge preservation
+- Research planning
+- Discovery of missing connections
+
+This suggests that successful Human-AI collaboration depends not only on information artifacts but also on procedural agreements.
+
+---
+
+### Finding 5: Future-Self Collaboration Is Real
+
+A recurring observation was that future versions of the researcher frequently became participants in the research process.
+
+Documentation was often created specifically to assist future research activities.
+
+README files, handover documents, research logs, and reminders functioned as communication channels across time.
+
+As a result, collaboration occurred not only among humans and AI systems but also between present and future versions of the same researcher.
+
+---
+
+## 10.3 Proposed Framework
+
+Based on the observations presented throughout this study, the following framework is proposed.
+
+Long-term Human-AI collaboration depends on four interconnected components:
+
+### Externalized Memory
+
+Preservation of research context outside active memory systems.
+
+### Context Transfer
+
+Movement of research context across time, sessions, repositories, and participants.
+
+### Distributed Research Memory
+
+Distribution of knowledge across humans, AI systems, repositories, and artifacts.
+
+### Collaboration Protocols
+
+Stable interaction patterns that support continuity and context recovery.
+
+Together, these components form the foundation of sustainable long-term Human-AI research programs.
+
+---
+
+## 10.4 Human-AI Research Continuity Theory
+
+The findings of this study support the following claim:
+
+> Long-term Human-AI research collaboration is fundamentally a problem of research continuity rather than a problem of intelligence alone.
+
+Under this interpretation, the success of collaboration depends on the ability to preserve, restore, and transfer context across time.
+
+Consequently, research infrastructure becomes as important as reasoning capability.
+
+Repositories, documentation systems, handovers, and reminders should therefore be considered integral components of Human-AI collaboration.
+
+---
+
+## 10.5 Future Directions
+
+Several avenues for future research remain open.
+
+These include:
+
+- Formal models of Externalized Memory
+- AI-to-AI handover protocols
+- Distributed Research Memory architectures
+- Human-AI collaboration standards
+- Repository-centered research environments
+- Longitudinal studies of multi-year Human-AI research programs
+
+Future work may determine whether the patterns observed in this study generalize beyond the present research program.
+
+---
+
+## 10.6 Final Statement
+
+This study began with a practical question:
+
+How can humans and AI systems continue a research program when neither participant can reliably preserve all necessary context?
+
+The observations presented throughout this work suggest that continuity emerges when context is externalized into persistent artifacts and transferred through stable collaboration structures.
+
+Under this view, successful Human-AI collaboration is not achieved by eliminating memory limitations.
+
+Instead, it is achieved by constructing systems that make those limitations manageable.
+
+Long-term research therefore becomes possible not because memory is perfect, but because context can be preserved, restored, and transferred across time.
 
