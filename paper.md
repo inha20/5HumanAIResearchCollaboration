@@ -330,6 +330,244 @@ The process through which research context moves across time, sessions, systems,
 
 These concepts are developed further in subsequent chapters.
 
+# 3. Research Environment
+
+## 3.1 Overview
+
+This study was conducted within an active long-term research program involving a human researcher, multiple AI systems, repository infrastructure, and external memory artifacts.
+
+Unlike controlled laboratory experiments, the research environment emerged organically during the development of multiple interconnected research projects.
+
+The objective of this chapter is to describe the components that participated in the collaboration process.
+
+---
+
+## 3.2 Human Researcher
+
+The central participant was a human researcher responsible for:
+
+- Defining research goals
+- Identifying research problems
+- Evaluating hypotheses
+- Organizing repositories
+- Coordinating AI systems
+- Preserving long-term objectives
+
+Although AI systems contributed extensively throughout the research process, strategic direction remained under human control.
+
+The human researcher also functioned as the primary integrator of knowledge generated across multiple systems.
+
+---
+
+## 3.3 AI Systems
+
+Multiple AI systems participated in the research program.
+
+Each system contributed different capabilities.
+
+### ChatGPT
+
+Primary functions included:
+
+- Research discussion
+- Theory development
+- Conceptual analysis
+- Research planning
+- Context integration
+
+ChatGPT frequently acted as a coordination layer connecting ideas originating from different repositories and conversations.
+
+---
+
+### Claude
+
+Primary functions included:
+
+- Repository organization
+- Documentation refinement
+- Structural editing
+- Research asset management
+
+Claude was often used for repository-scale operations and document restructuring.
+
+---
+
+### ANTIGRAVITY
+
+Primary functions included:
+
+- Large-scale repository analysis
+- Bulk document processing
+- Long-form generation tasks
+
+ANTIGRAVITY was frequently utilized when processing large collections of files and repositories.
+
+---
+
+### Future AI Systems
+
+The research architecture was intentionally designed to remain compatible with future AI systems.
+
+Consequently, documentation practices emphasized portability and system-independent knowledge preservation.
+
+---
+
+## 3.4 Repository Infrastructure
+
+GitHub repositories served as the primary persistent storage environment.
+
+The repository structure gradually evolved into a research program architecture.
+
+Major repositories included:
+
+### Research Repositories
+
+1. 1KMapStructureInvariance
+2. 2SymmetricBooleanFunctionMinorThesis
+3. 3VariableRearrangementInvarianceMinorThesis
+4. 4StructureRecognitionTheory
+5. 5HumanAIResearchCollaboration
+
+### Supporting Repositories
+
+- Research Portfolio
+- ANTIGRAVITY
+
+Together, these repositories formed the persistent knowledge infrastructure of the research program.
+
+---
+
+## 3.5 Documentation Systems
+
+Documentation artifacts played a central role in preserving research continuity.
+
+Examples included:
+
+### README Files
+
+Provided repository-level context.
+
+### Handover Documents
+
+Enabled context transfer between AI systems.
+
+### Research Logs
+
+Recorded observations and progress over time.
+
+### Status Reports
+
+Summarized the current state of ongoing work.
+
+### Repository Descriptions
+
+Provided high-level explanations of repository purpose and relationships.
+
+These documents collectively formed a large portion of the Externalized Memory system.
+
+---
+
+## 3.6 Project Memory Systems
+
+Project-based memory systems were used to preserve recurring observations and research insights.
+
+Examples included:
+
+- Research hypotheses
+- Collaboration observations
+- Structural discoveries
+- Long-term plans
+- Working agreements
+
+These memory systems reduced the need for repeated reconstruction of important concepts.
+
+---
+
+## 3.7 Reminder Systems
+
+Reminder systems functioned as temporal extensions of memory.
+
+Examples included:
+
+- Scheduled reminders
+- Task notifications
+- Future prompts
+- Research follow-up triggers
+
+These mechanisms helped maintain continuity across interruptions and long time intervals.
+
+---
+
+## 3.8 Handover Infrastructure
+
+The research program repeatedly involved transitions between:
+
+- AI systems
+- Sessions
+- Repositories
+- Research phases
+
+To support continuity, handover infrastructure was developed.
+
+Examples included:
+
+- AI handover files
+- Repository summaries
+- README documents
+- Portfolio repositories
+
+These artifacts reduced context loss during transitions.
+
+---
+
+## 3.9 Human-AI Working Agreements
+
+A unique aspect of the research environment was the emergence of recurring collaboration protocols.
+
+Examples included:
+
+- "또 날 위해 출력해줄 거 있어?"
+- "저장할 거 저장해줘."
+- "연구 프로그램 관점에서 보면?"
+- "지금 내가 놓치고 있는 것은?"
+
+These interactions gradually became stable mechanisms for:
+
+- Context restoration
+- Research planning
+- Knowledge preservation
+- Discovery of missing connections
+
+As a result, collaboration protocols became part of the research environment itself.
+
+---
+
+## 3.10 Environment Characteristics
+
+Several characteristics distinguished this research environment from conventional Human-AI interaction settings.
+
+### Long-Term Duration
+
+The research program extended across many sessions and repositories.
+
+### Multi-AI Participation
+
+Multiple AI systems participated throughout the project lifecycle.
+
+### Persistent Artifacts
+
+Research context was continuously preserved through repositories and documentation.
+
+### Future-Self Collaboration
+
+The future version of the researcher functioned as an indirect collaborator through artifact-mediated communication.
+
+### Distributed Memory
+
+Research memory was distributed across humans, AI systems, repositories, documentation, and reminder systems.
+
+These characteristics collectively formed the environment in which the observations presented in this study emerged.
+
 # 4. Externalized Memory
 
 ## 4.1 The Memory Problem
