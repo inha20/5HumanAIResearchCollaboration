@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Human-AI Research Continuity Theory (HARCT) — Paper 5</title>
+  <meta name="description" content="Human-AI Research Continuity Theory (HARCT): Long-term Human-AI research collaboration is fundamentally a problem of research continuity rather than intelligence alone. Proposes Goal Preservation Theory, Cognitive Architecture, Reconstruction Cost Theory, and Externalized Memory." />
+  <meta name="keywords" content="human-AI collaboration, research continuity, HARCT, goal preservation, reconstruction cost, externalized memory, future-self collaboration, AI-to-AI handover, distributed research memory, long-term research, context transfer, cognitive architecture" />
+  <style>
+    :root {
+      --bg: #f5f7ff;
+      --surface: #ffffff;
+      --border: #dde2f0;
+      --text: #1c1e30;
+      --text-sub: #525770;
+      --accent: #2d3b8e;
+      --accent-light: #edf0fc;
+      --accent2: #5a6eb5;
+      --code-bg: #f0f2fa;
+      --tag-meta: #fce4ec;
+      --tag-meta-text: #880e4f;
+      --tag-empirical: #e3f2fd;
+      --tag-empirical-text: #1565c0;
+      --tag-theory: #ede7f6;
+      --tag-theory-text: #4527a0;
+      --status-active: #1e6b4a;
+      --status-active-bg: #edf7f2;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', 'Nanum Myeongjo', serif;
+      font-size: 1rem;
+      line-height: 1.85;
+    }
+
+    /* ── Top nav ── */
+    .top-nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.95);
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid var(--border);
+      padding: .55rem 1.5rem;
+      display: flex; gap: 1.2rem; flex-wrap: wrap; align-items: center;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .82rem;
+    }
+    .top-nav a { color: var(--accent); text-decoration: none; }
+    .top-nav a:hover { text-decoration: underline; }
+    .top-nav .series { margin-left: auto; font-size: .75rem; color: var(--text-sub); }
+
+    /* ── Page wrap ── */
+    .page-wrap { max-width: 900px; margin: 0 auto; padding: 0 1.5rem 5rem; }
+
+    /* ── Cover ── */
+    .cover {
+      padding: 4rem 0 2.5rem;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 2.5rem;
+    }
+    .cover .series-label {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .75rem;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: var(--text-sub);
+      margin-bottom: .5rem;
+    }
+    .cover .paper-badge {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .78rem;
+      font-weight: 700;
+      padding: .2rem .7rem;
+      border-radius: 3px;
+      margin-bottom: .9rem;
+    }
+    .cover h1 {
+      font-size: clamp(1.5rem, 4vw, 2.1rem);
+      font-weight: bold;
+      line-height: 1.35;
+      color: var(--text);
+      margin-bottom: .5rem;
+    }
+    .cover .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-sub);
+      font-style: italic;
+      margin-bottom: 1.4rem;
+    }
+    .cover .meta {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .85rem;
+      color: var(--text-sub);
+    }
+    .cover .meta a { color: var(--accent); text-decoration: none; }
+
+    /* ── Section headings ── */
+    h2 {
+      font-size: 1.28rem;
+      margin: 2.8rem 0 .85rem;
+      padding-bottom: .35rem;
+      border-bottom: 2px solid var(--accent);
+      color: var(--accent);
+      font-family: 'Helvetica Neue', sans-serif;
+    }
+    h3 {
+      font-size: 1.06rem;
+      margin: 1.85rem 0 .5rem;
+      color: var(--text);
+      font-weight: 700;
+    }
+    p { margin-bottom: 1rem; text-align: justify; }
+    strong { font-weight: 700; }
+    em { font-style: italic; }
+
+    /* ── Abstract box ── */
+    .abstract {
+      background: var(--accent-light);
+      border-left: 4px solid var(--accent);
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0;
+    }
+    .abstract-title {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-weight: 700;
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--accent);
+      margin-bottom: .6rem;
+    }
+
+    /* ── Central claim ── */
+    .central-claim {
+      background: var(--surface);
+      border: 2px solid var(--accent);
+      border-radius: 8px;
+      padding: 1.4rem 1.8rem;
+      margin: 2rem 0;
+      text-align: center;
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--accent);
+      line-height: 1.6;
+    }
+
+    /* ── Framework flow ── */
+    .flow-box {
+      background: var(--code-bg);
+      border-radius: 6px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.4rem 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .92rem;
+    }
+    .flow-step {
+      display: flex;
+      align-items: flex-start;
+      gap: .8rem;
+      padding: .35rem 0;
+    }
+    .flow-label {
+      font-weight: 700;
+      color: var(--accent);
+      min-width: 10rem;
+      flex-shrink: 0;
+    }
+    .flow-desc {
+      color: var(--text-sub);
+      font-size: .87rem;
+    }
+    .flow-arrow {
+      color: var(--accent2);
+      font-size: .9rem;
+      padding-left: 2.2rem;
+      opacity: .6;
+    }
+
+    /* ── Tables ── */
+    .tbl-wrap { overflow-x: auto; margin: 1.4rem 0; }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .87rem;
+    }
+    th {
+      background: var(--accent);
+      color: #fff;
+      padding: .5rem .9rem;
+      text-align: left;
+      font-weight: 600;
+    }
+    td { padding: .45rem .9rem; border: 1px solid var(--border); }
+    tr:nth-child(even) td { background: var(--accent-light); }
+    .td-center { text-align: center; }
+
+    /* ── Component cards ── */
+    .comp-grid { display: grid; gap: .8rem; margin: 1.2rem 0; }
+    .comp-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1rem 1.2rem;
+      border-left: 4px solid var(--accent2);
+    }
+    .comp-num {
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      color: var(--accent2);
+      margin-bottom: .3rem;
+    }
+    .comp-name {
+      font-weight: 700;
+      font-size: .97rem;
+      color: var(--accent);
+      margin-bottom: .3rem;
+    }
+    .comp-claim { font-size: .88rem; color: var(--text-sub); }
+    .comp-card.high { border-left-color: #3b5ea6; }
+
+    /* ── Concept chips ── */
+    .concept-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: .8rem;
+      margin: 1.2rem 0;
+    }
+    .concept-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: .9rem 1.1rem;
+    }
+    .concept-card h4 {
+      font-size: .93rem;
+      font-weight: 700;
+      color: var(--accent);
+      margin-bottom: .3rem;
+    }
+    .concept-card p { font-size: .84rem; color: var(--text-sub); margin-bottom: 0; }
+
+    /* ── Self-referential box ── */
+    .self-ref {
+      background: #fff8e1;
+      border: 1px solid #f9a825;
+      border-radius: 6px;
+      padding: 1.1rem 1.4rem;
+      margin: 1.6rem 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .88rem;
+    }
+    .self-ref strong { color: #e65100; }
+
+    /* ── Predictions ── */
+    .pred-grid { display: grid; gap: .55rem; margin: 1.2rem 0; }
+    .pred-row {
+      display: grid;
+      grid-template-columns: 3rem 1fr;
+      gap: .6rem;
+      align-items: start;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .87rem;
+    }
+    .pred-num {
+      font-weight: 700;
+      color: #fff;
+      background: var(--accent);
+      border-radius: 4px;
+      text-align: center;
+      padding: .2rem .3rem;
+      font-size: .8rem;
+    }
+
+    /* ── Series nav ── */
+    .series-nav {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.4rem 1.6rem;
+      margin: 3rem 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .88rem;
+    }
+    .series-nav h3 { color: var(--accent); font-size: .95rem; margin-bottom: 1rem; }
+    .series-row {
+      display: flex; align-items: flex-start; gap: .75rem;
+      padding: .5rem .5rem;
+      border-radius: 5px;
+      margin-bottom: .25rem;
+    }
+    .series-row.current { background: var(--accent-light); font-weight: 700; }
+    .series-row a { color: var(--accent); text-decoration: none; }
+    .series-row a:hover { text-decoration: underline; }
+    .series-num {
+      width: 1.5rem; height: 1.5rem;
+      background: var(--accent);
+      color: #fff;
+      border-radius: 3px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .75rem; font-weight: 700; flex-shrink: 0;
+    }
+    .series-num.current { background: var(--accent2); }
+    .series-desc { font-size: .82rem; color: var(--text-sub); display: block; margin-top: .1rem; }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 1.2rem 1.5rem;
+      margin: 2rem 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .88rem;
+    }
+    .toc-title { font-weight: 700; margin-bottom: .7rem; color: var(--accent); }
+    .toc ol { padding-left: 1.4rem; }
+    .toc li { margin: .25rem 0; }
+    .toc a { color: var(--text); text-decoration: none; }
+    .toc a:hover { color: var(--accent); text-decoration: underline; }
+
+    /* ── Architecture diagram ── */
+    .arch-box {
+      background: var(--code-bg);
+      border-radius: 6px;
+      padding: 1.2rem 1.5rem;
+      margin: 1.4rem 0;
+      font-family: 'Courier New', monospace;
+      font-size: .87rem;
+      line-height: 1.7;
+      color: var(--text);
+    }
+    .arch-box .arch-em { color: var(--accent); font-weight: 700; }
+
+    /* ── Status badge ── */
+    .status-badge {
+      display: inline-block;
+      background: var(--status-active-bg);
+      color: var(--status-active);
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .75rem;
+      font-weight: 700;
+      padding: .2rem .65rem;
+      border-radius: 3px;
+      border: 1px solid #9ee0c3;
+      margin-left: .6rem;
+    }
+
+    /* ── Novelty table tag ── */
+    .novelty-high { background: #e8f5e9; color: #1b5e20; padding: .1rem .4rem; border-radius: 3px; font-size: .8rem; font-weight: 700; }
+    .novelty-med { background: #fff8e1; color: #e65100; padding: .1rem .4rem; border-radius: 3px; font-size: .8rem; font-weight: 700; }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--border);
+      margin-top: 4rem;
+      padding-top: 1.2rem;
+      font-family: 'Helvetica Neue', sans-serif;
+      font-size: .8rem;
+      color: var(--text-sub);
+      text-align: center;
+    }
+    footer a { color: var(--accent); }
+
+    @media (max-width: 640px) {
+      .cover h1 { font-size: 1.4rem; }
+      .top-nav .series { display: none; }
+      .pred-row { grid-template-columns: 2.5rem 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="top-nav">
+  <a href="#abstract">Abstract</a>
+  <a href="#claim">Central Claim</a>
+  <a href="#components">Four Components</a>
+  <a href="#concepts">Key Concepts</a>
+  <a href="#predictions">Predictions</a>
+  <a href="#series">Research Program</a>
+  <span class="series">Structure Recognition Research · Paper 5 (Methodological Meta-layer)</span>
+</nav>
+
+<div class="page-wrap">
+
+  <!-- Cover -->
+  <header class="cover">
+    <p class="series-label">Methodological Meta-layer · Self-Referential Study</p>
+    <span class="paper-badge">Paper 5</span>
+    <h1>Human-AI Research Continuity Theory</h1>
+    <p class="subtitle">Long-term Human-AI research collaboration is fundamentally a problem of research continuity rather than intelligence alone.</p>
+    <p class="meta">
+      Repository: <a href="https://github.com/inha20/5HumanAIResearchCollaboration" target="_blank">5HumanAIResearchCollaboration</a>
+      &nbsp;·&nbsp; Choi Jonghun, Inha University
+      <span class="status-badge">Complete — 2026-06-06</span>
+    </p>
+  </header>
+
+  <!-- Self-referential note -->
+  <div class="self-ref">
+    <strong>Note on Self-Reference:</strong> Paper 5 investigates the collaboration process that made Papers 1–4 possible. The research program studies itself. The methods used to build this program become the object of study.
+  </div>
+
+  <!-- TOC -->
+  <nav class="toc">
+    <p class="toc-title">Contents</p>
+    <ol>
+      <li><a href="#abstract">Abstract</a></li>
+      <li><a href="#claim">Central Claim (HARCT)</a></li>
+      <li><a href="#components">Four Theoretical Components</a></li>
+      <li><a href="#concepts">Key Concepts</a></li>
+      <li><a href="#architecture">Cognitive Architecture</a></li>
+      <li><a href="#novelty">Novelty Assessment</a></li>
+      <li><a href="#predictions">Testable Predictions</a></li>
+      <li><a href="#series">Research Program</a></li>
+    </ol>
+  </nav>
+
+  <!-- Abstract -->
+  <section id="abstract">
+    <h2>Abstract</h2>
+    <div class="abstract">
+      <p class="abstract-title">Abstract</p>
+      <p>
+        Long-term Human-AI collaboration presents challenges that extend beyond the capabilities of either human memory or AI memory alone.
+        This study investigates long-term Human-AI research collaboration through a multi-repository research program
+        and proposes <strong>Human-AI Research Continuity Theory (HARCT)</strong> as a unified explanatory framework:
+        long-term Human-AI research collaboration is fundamentally a problem of <em>research continuity</em> rather than intelligence alone.
+      </p>
+      <p>
+        HARCT is supported by four theoretical components. <strong>Goal Preservation Theory</strong> argues that preserving research goals
+        is more fundamental than preserving information — goals enable reconstruction, while information without direction becomes an unusable archive.
+        <strong>Cognitive Architecture Theory</strong> identifies a three-component distributed system in which humans preserve goals, AI systems perform
+        reasoning and reconstruction, and artifacts preserve context. <strong>Reconstruction Cost Theory</strong> frames documentation quality as an
+        economic variable that directly determines collaboration efficiency. <strong>Externalized Memory</strong> describes how context is stored
+        outside active participants through persistent artifacts.
+      </p>
+      <p>
+        The findings suggest that sustainable long-term Human-AI research depends not on perfect memory, but on constructing systems that
+        preserve goals, minimize reconstruction costs, and transfer context across time, sessions, and participants.
+      </p>
+      <p style="margin-bottom:0; font-size:.88rem; color:var(--text-sub);">
+        <strong>Keywords:</strong> Human-AI Collaboration, HARCT, Goal Preservation, Reconstruction Cost, Cognitive Labor Division,
+        Externalized Memory, Distributed Research Memory, Context Transfer, Future-Self Collaboration, AI-to-AI Handover
+      </p>
+    </div>
+  </section>
+
+  <!-- Central Claim -->
+  <section id="claim">
+    <h2>Central Claim — HARCT</h2>
+    <div class="central-claim">
+      Long-term Human-AI research collaboration is fundamentally a problem of<br />
+      <strong>research continuity</strong> rather than intelligence alone.
+    </div>
+    <p>
+      Current discussions surrounding AI frequently focus on reasoning capability, model performance, or context window size.
+      HARCT proposes that for long-term research programs, the primary challenge is not intelligence but the ability to
+      <em>preserve, restore, and transfer research context</em> across time, sessions, AI systems, and repositories.
+    </p>
+    <p>
+      Intelligence is necessary but insufficient. Research continuity becomes the primary challenge.
+    </p>
+
+    <h3>Why Research Continuity Fails</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Failure Type</th><th>Mechanism</th><th>Effect</th></tr></thead>
+        <tbody>
+          <tr><td>Human Forgetting</td><td>Biological memory limits over time</td><td>Forgotten discoveries and goals</td></tr>
+          <tr><td>AI Context Loss</td><td>Finite context window boundaries</td><td>Earlier discussions inaccessible</td></tr>
+          <tr><td>Session Boundaries</td><td>Each session requires re-establishing context</td><td>Repeated onboarding costs</td></tr>
+          <tr><td>AI System Transitions</td><td>New AI lacks context of previous system</td><td>Context loss proportional to documentation gap</td></tr>
+          <tr><td>Goal Drift</td><td>Local tasks displace strategic objectives</td><td>Research moves from original purpose undetected</td></tr>
+          <tr><td>Repository Fragmentation</td><td>Proliferation without integration</td><td>Duplicate ideas, missing connections</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>
+      Research continuity is not achieved by eliminating these limitations.
+      It is achieved by constructing systems that make them manageable.
+    </p>
+  </section>
+
+  <!-- Four Components -->
+  <section id="components">
+    <h2>Four Theoretical Components</h2>
+    <p>
+      HARCT integrates four theoretical components. They are not independent — they form a coherent explanatory system.
+    </p>
+    <div class="comp-grid">
+      <div class="comp-card high">
+        <p class="comp-num">Component 1 — High Novelty</p>
+        <p class="comp-name">Goal Preservation Theory</p>
+        <p class="comp-claim">Preserving research goals is more fundamental than preserving information. Goals enable context reconstruction; information without direction becomes an unusable archive. When goals survive interruptions, context can be rebuilt. The reverse is not necessarily true.</p>
+      </div>
+      <div class="comp-card high">
+        <p class="comp-num">Component 2 — Medium Novelty</p>
+        <p class="comp-name">Three-Component Cognitive Architecture</p>
+        <p class="comp-claim">Research continuity requires three interacting components: (1) Human long-term goal memory, (2) AI short-term reasoning capability, and (3) Artifact-based context storage. None is sufficient alone. Continuity emerges from their interaction.</p>
+      </div>
+      <div class="comp-card high">
+        <p class="comp-num">Component 3 — High Novelty</p>
+        <p class="comp-name">Reconstruction Cost Theory</p>
+        <p class="comp-claim">Documentation quality is a direct economic variable determining collaboration efficiency. As research duration increases, reconstruction cost becomes the dominant factor. Poor documentation is not merely incomplete — it is expensive.</p>
+      </div>
+      <div class="comp-card">
+        <p class="comp-num">Component 4</p>
+        <p class="comp-name">Externalized Memory</p>
+        <p class="comp-claim">Research context can be preserved outside both human memory and AI context windows, through repositories, documents, handover files, and reminder systems. The critical property is not storage but recoverability — the ability to restore context efficiently.</p>
+      </div>
+    </div>
+
+    <h3>How the Components Interact</h3>
+    <div class="flow-box">
+      <div class="flow-step">
+        <span class="flow-label">Goal Preservation</span>
+        <span class="flow-desc">Determines <em>what</em> must be preserved — research direction and identity</span>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="flow-label">Externalized Memory</span>
+        <span class="flow-desc">Provides <em>where</em> context is stored — in persistent artifacts outside active participants</span>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="flow-label">Reconstruction Cost</span>
+        <span class="flow-desc">Determines <em>why</em> documentation quality matters — as economic efficiency variable</span>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="flow-label">Cognitive Architecture</span>
+        <span class="flow-desc">Explains <em>how</em> preservation is distributed — across humans, AI, and artifacts</span>
+      </div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step">
+        <span class="flow-label">Research Continuity</span>
+        <span class="flow-desc">Emerges when all four components operate together successfully</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Concepts -->
+  <section id="concepts">
+    <h2>Key Concepts</h2>
+    <div class="concept-grid">
+      <div class="concept-card">
+        <h4>Future-Self Collaboration</h4>
+        <p>Collaboration between temporally displaced versions of the same researcher. Documentation is not record-keeping but communication with a future collaborator who lacks current context.</p>
+      </div>
+      <div class="concept-card">
+        <h4>Memory Repository</h4>
+        <p>Any artifact capable of preserving research context and supporting future context restoration. Distinguished by recoverability, not merely storage capacity.</p>
+      </div>
+      <div class="concept-card">
+        <h4>AI-to-AI Handover</h4>
+        <p>Context transfer mechanism enabling research continuity when one AI system is replaced by another. Requires structured handover artifacts to reduce context loss.</p>
+      </div>
+      <div class="concept-card">
+        <h4>Distributed Research Memory</h4>
+        <p>Research memory distributed across humans, AI systems, repositories, and artifacts. No single component holds the complete context; continuity emerges from interaction.</p>
+      </div>
+      <div class="concept-card">
+        <h4>Reconstruction Cost</h4>
+        <p>Total effort (time, cognitive load, tokens) required to restore sufficient context for productive research. Determined primarily by documentation quality.</p>
+      </div>
+      <div class="concept-card">
+        <h4>Context Transfer</h4>
+        <p>The process by which research context moves across time, participants, and AI systems through external artifacts. The critical operation of long-term collaboration.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cognitive Architecture -->
+  <section id="architecture">
+    <h2>Three-Component Cognitive Architecture</h2>
+    <p>
+      Long-term research memory is not held within any single participant. Instead, it is distributed across three interacting components:
+    </p>
+    <div class="tbl-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Primary Function</th>
+            <th>What It Preserves</th>
+            <th>Limitation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Human Researcher</strong></td>
+            <td>Goal memory</td>
+            <td><em>Why</em> — research direction, purpose, identity</td>
+            <td>Forgetting details over time</td>
+          </tr>
+          <tr>
+            <td><strong>AI Systems</strong></td>
+            <td>Reasoning &amp; reconstruction</td>
+            <td><em>How</em> — analysis, explanation, pattern</td>
+            <td>Session and context window boundaries</td>
+          </tr>
+          <tr>
+            <td><strong>Artifacts</strong></td>
+            <td>Context storage</td>
+            <td><em>What</em> — decisions, history, relationships</td>
+            <td>Requires careful design for recoverability</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Observed Division of Cognitive Labor</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Participant</th><th>Primary Role in This Program</th></tr></thead>
+        <tbody>
+          <tr><td>Human Researcher</td><td>Goal selection, structure discovery, research direction, significance evaluation</td></tr>
+          <tr><td>ChatGPT</td><td>Theory development, concept integration, hypothesis generation, cross-repository reasoning</td></tr>
+          <tr><td>Claude</td><td>Repository organization, structural refinement, documentation management</td></tr>
+          <tr><td>ANTIGRAVITY</td><td>Large-scale repository analysis, bulk processing, long-form document generation</td></tr>
+          <tr><td>Repositories &amp; Documents</td><td>Persistent context storage, navigation, handover interfaces</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>The Role of Artifacts as Cognitive Infrastructure</h3>
+    <p>
+      Repositories are not passive storage systems. They function as cognitive infrastructure when they preserve, organize,
+      and transfer research context across time, participants, and systems. A repository is an active component of distributed cognition,
+      not merely a file container.
+    </p>
+    <div class="arch-box">
+Human Goal Memory<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+&nbsp;&nbsp;Memory Repository &nbsp;&nbsp;(README, Handover, ResearchLog, ...)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+&nbsp;&nbsp;AI Reconstruction &nbsp;&nbsp;(Context restored from artifacts)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+<span class="arch-em">&nbsp;&nbsp;Research Continuity</span>
+    </div>
+  </section>
+
+  <!-- Novelty -->
+  <section id="novelty">
+    <h2>Novelty Assessment</h2>
+    <p>
+      The following assessment classifies each major concept by publication-level originality,
+      based on comparison with Distributed Cognition, Extended Mind, Knowledge Management, PKM, HCI, and CSCW literature.
+    </p>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Concept</th><th>Novelty</th><th>Basis for Assessment</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong>HARCT (central framework)</strong></td>
+            <td><span class="novelty-high">High</span></td>
+            <td>Long-term multi-AI collaboration framed as continuity problem — no identified prior literature</td>
+          </tr>
+          <tr>
+            <td>Goal Preservation Theory</td>
+            <td><span class="novelty-high">High</span></td>
+            <td>Goals &gt; Information in Human-AI collaboration — not explicitly addressed in HCI or CSCW</td>
+          </tr>
+          <tr>
+            <td>Future-Self Collaboration</td>
+            <td><span class="novelty-high">High</span></td>
+            <td>Documentation as collaboration with a temporally displaced self — not treated this way in PKM literature</td>
+          </tr>
+          <tr>
+            <td>Reconstruction Cost Theory</td>
+            <td><span class="novelty-high">High</span></td>
+            <td>Documentation quality as explicit economic variable for collaboration efficiency — novel framing</td>
+          </tr>
+          <tr>
+            <td>Cognitive Labor Division</td>
+            <td><span class="novelty-med">Medium</span></td>
+            <td>Overlaps with Distributed Cognition; contribution is the human/AI/artifact asymmetry</td>
+          </tr>
+          <tr>
+            <td>Distributed Research Memory</td>
+            <td><span class="novelty-med">Medium</span></td>
+            <td>Conceptually adjacent to Distributed Cognition; requires differentiation</td>
+          </tr>
+          <tr>
+            <td>Repository as Cognitive Infrastructure</td>
+            <td><span class="novelty-med">Medium</span></td>
+            <td>Overlaps with Extended Mind; contribution is the AI-assisted research workflow application</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Testable Predictions -->
+  <section id="predictions">
+    <h2>Testable Predictions</h2>
+    <p>
+      A scientifically useful theory must generate predictions that can be evaluated against future observations.
+      The following predictions follow directly from HARCT:
+    </p>
+    <div class="pred-grid">
+      <div class="pred-row">
+        <span class="pred-num">P1</span>
+        <span>Research programs with stronger repository infrastructure will exhibit higher continuity: faster recovery, lower reconstruction cost, easier AI onboarding.</span>
+      </div>
+      <div class="pred-row">
+        <span class="pred-num">P2</span>
+        <span>Repositories with high-quality README files will require less reconstruction effort than repositories with poor documentation. <em>Good Documentation → Lower Reconstruction Cost → Higher Continuity.</em></span>
+      </div>
+      <div class="pred-row">
+        <span class="pred-num">P3</span>
+        <span>AI transitions will produce less context loss when structured handover artifacts exist than when they do not. <em>AI Transition + Handover Document → Lower Context Loss.</em></span>
+      </div>
+      <div class="pred-row">
+        <span class="pred-num">P4</span>
+        <span>Researchers who create future-oriented artifacts will recover context more efficiently and resume research faster than those who do not.</span>
+      </div>
+      <div class="pred-row">
+        <span class="pred-num">P5</span>
+        <span>Projects with explicit goal preservation mechanisms will survive longer interruptions than projects where goals are not deliberately preserved. <em>Goal Preserved → Context Reconstructable → Research Continues.</em></span>
+      </div>
+      <div class="pred-row">
+        <span class="pred-num">P6</span>
+        <span>As research duration increases, reconstruction cost will become an increasingly dominant factor determining collaboration efficiency — more important in year-scale projects than in week-scale projects.</span>
+      </div>
+      <div class="pred-row">
+        <span class="pred-num">P7</span>
+        <span>Research continuity will be higher when knowledge is attached to persistent artifacts rather than to specific AI systems, enabling AI replaceability.</span>
+      </div>
+      <div class="pred-row">
+        <span class="pred-num">P8</span>
+        <span>Stable collaboration protocols will improve continuity by reducing the time and effort required to re-establish research context after interruptions.</span>
+      </div>
+    </div>
+
+    <h3>Candidate Formal Variables</h3>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Variable</th><th>Symbol</th><th>Definition</th></tr></thead>
+        <tbody>
+          <tr><td>Research Continuity</td><td class="td-center"><strong>RC</strong></td><td>Ability to preserve, restore, and extend research across time</td></tr>
+          <tr><td>Goal Preservation</td><td class="td-center"><strong>GP</strong></td><td>Degree to which research direction survives interruptions</td></tr>
+          <tr><td>Context Transfer Quality</td><td class="td-center"><strong>CT</strong></td><td>Effectiveness of artifact-based context movement across time</td></tr>
+          <tr><td>Reconstruction Cost</td><td class="td-center"><strong>RCost</strong></td><td>Total effort to restore productive research context</td></tr>
+          <tr><td>Externalized Memory Strength</td><td class="td-center"><strong>EM</strong></td><td>Coverage and recoverability of externalized context</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="arch-box">
+Candidate formulation:&nbsp;&nbsp;<span class="arch-em">RC ∝ (GP × CT) / RCost</span>
+    </div>
+  </section>
+
+  <!-- Program -->
+  <section id="series">
+    <h2>Research Program</h2>
+    <p>
+      Paper 5 is the <strong>methodological meta-layer</strong> of the Structure Recognition Research Program.
+      It studies the process — Human-AI collaboration across multiple AI systems, repositories, and time —
+      that made Papers 1–4 possible.
+    </p>
+    <div class="arch-box">
+Paper 1: KMap Structure Invariance&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(empirical case 1 — visual pattern discovery)<br>
+Paper 2: Symmetric Boolean Functions&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(empirical case 2 — structural regularity)<br>
+Paper 3: Variable Rearrangement&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(empirical case 3 — structure under transformation)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+Paper 4: Structure Recognition Theory&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(theoretical hub — unifying Papers 1–3)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;↓<br>
+<span class="arch-em">Paper 5: Human-AI Research Collaboration&nbsp;(methodological meta-layer ← this repository)</span>
+    </div>
+    <div class="series-nav">
+      <h3>Structure Recognition Research Program</h3>
+      <div class="series-row">
+        <span class="series-num">1</span>
+        <div>
+          <a href="https://inha20.github.io/1KMapStructureInvariance/" target="_blank">KMap Structure Invariance</a>
+          <span class="series-desc">XOR/XNOR checkerboard pattern analysis — Empirical Case Study 1</span>
+        </div>
+      </div>
+      <div class="series-row">
+        <span class="series-num">2</span>
+        <div>
+          <a href="https://inha20.github.io/2SymmetricBooleanFunctionMinorThesis/" target="_blank">Symmetric Boolean Functions</a>
+          <span class="series-desc">Hamming Weight layer structures — Empirical Case Study 2</span>
+        </div>
+      </div>
+      <div class="series-row">
+        <span class="series-num">3</span>
+        <div>
+          <a href="https://inha20.github.io/3VariableRearrangementInvarianceMinorThesis/" target="_blank">Variable Rearrangement Invariance</a>
+          <span class="series-desc">Structural invariance under variable permutation — Empirical Case Study 3</span>
+        </div>
+      </div>
+      <div class="series-row">
+        <span class="series-num">4</span>
+        <div>
+          <a href="https://inha20.github.io/4StructureRecognitionTheory/" target="_blank">Structure Recognition Theory</a>
+          <span class="series-desc">Theoretical hub — integrating Papers 1–3</span>
+        </div>
+      </div>
+      <div class="series-row current">
+        <span class="series-num current">5</span>
+        <div>
+          <strong>Human-AI Research Collaboration</strong>
+          <span class="series-desc">Methodological meta-layer — studying the process that produced Papers 1–4 (current page)</span>
+        </div>
+      </div>
+      <div class="series-row" style="margin-top:.5rem; padding-top:.7rem; border-top: 1px solid var(--border);">
+        <span class="series-num" style="background:var(--text-sub)">H</span>
+        <div>
+          <a href="https://inha20.github.io/Research-Portfolio/" target="_blank">Research Portfolio Hub</a>
+          <span class="series-desc">Program navigation — full program overview and links</span>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:.87rem; color:var(--text-sub);">
+      Full paper: <a href="paper.md">paper.md</a>
+      &nbsp;·&nbsp;
+      Program Hub: <a href="https://github.com/inha20/Research-Portfolio" target="_blank">Research-Portfolio</a>
+      &nbsp;·&nbsp;
+      AI Workspace: <a href="https://github.com/inha20/ANTIGRAVITY" target="_blank">ANTIGRAVITY</a>
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  <p>
+    5HumanAIResearchCollaboration &nbsp;|&nbsp;
+    <a href="https://github.com/inha20/5HumanAIResearchCollaboration" target="_blank">GitHub Repository</a>
+    &nbsp;|&nbsp; Choi Jonghun, Inha University
+  </p>
+  <p style="margin-top:.4rem; font-size:.78rem;">
+    Human-AI Research Continuity Theory (HARCT) — all theoretical components are exploratory frameworks, not established conclusions.
+  </p>
+</footer>
+
+</body>
+</html>

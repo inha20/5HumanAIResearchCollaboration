@@ -1,0 +1,203 @@
+# Token Economics of Human-AI Research
+
+> **Paper Integration Note**
+> This document has been integrated into `paper.md` (Sections 7 and 9).
+> It is preserved here as an independent reference for potential future extraction or standalone use.
+
+---
+
+## Abstract
+
+Human-AI collaboration is commonly viewed as a problem of intelligence and capability. However, long-term collaboration introduces an additional constraint: the cost of context reconstruction.
+
+This paper proposes that many failures in Human-AI collaboration arise not from insufficient intelligence, but from the repeated need to reconstruct lost context. Context reconstruction consumes tokens, time, attention, and computational resources.
+
+Building upon Human-AI Context Transfer Theory (HACTT) and the AI Research Handover Protocol (ARHP), this paper introduces **Token Economics** as a framework for understanding the relationship between context preservation, recoverability, and collaboration efficiency.
+
+---
+
+# 1. Introduction: Intelligence Is Not the Only Constraint
+
+When discussing AI systems, attention is often focused on model capability.
+
+Questions such as:
+
+- How intelligent is the model?
+- How accurate are its responses?
+- How large is its context window?
+
+are common.
+
+However, long-term collaboration introduces a different challenge.
+
+Even highly capable systems may fail to continue productive work if sufficient context cannot be reconstructed.
+
+This suggests that collaboration is constrained not only by intelligence, but also by **context reconstruction cost**.
+
+---
+
+# 2. Context Reconstruction Cost: The Hidden Cost of Collaboration
+
+Every collaborative session begins with context reconstruction.
+
+A participant must answer questions such as:
+
+- What is the goal?
+- What is the current state?
+- What happened previously?
+- What should happen next?
+
+The effort required to answer these questions represents **reconstruction cost**.
+
+## Repeated Reconstruction
+
+When context is not preserved, reconstruction must be repeated.
+
+Repeated reconstruction consumes resources without directly advancing the project.
+
+In long-term research programs, this cost may exceed the cost of the productive work itself.
+
+## Lost Context
+
+Lost context increases uncertainty.
+
+As uncertainty increases, additional resources are consumed to recover missing information.
+
+---
+
+# 3. Tokens as Economic Resources
+
+## Tokens as a Resource
+
+AI systems operate through token consumption.
+
+Every interaction, analysis, summary, and reconstruction activity consumes tokens.
+
+Tokens therefore function as a **limited resource** within Human-AI collaboration.
+
+## Tokens as Reconstruction Cost
+
+Not all token consumption creates equal value.
+
+Tokens spent generating new insights differ from tokens spent rediscovering previously known information.
+
+Token Economics focuses on this distinction.
+
+## Productive Tokens vs. Reconstruction Tokens
+
+**Productive Tokens:**
+
+- Create new knowledge.
+- Advance the project.
+- Generate outputs.
+
+**Reconstruction Tokens:**
+
+- Recover lost context.
+- Rebuild understanding.
+- Restore continuity.
+
+Reducing reconstruction tokens increases collaboration efficiency.
+
+---
+
+# 4. Context Infrastructure
+
+## Repositories
+
+Repositories act as external memory systems.
+
+By preserving context in structured artifacts, repositories reduce reconstruction requirements.
+
+## Documentation
+
+Documentation transforms implicit knowledge into recoverable context.
+
+Examples include:
+
+- README files
+- Status documents
+- Research logs
+- Handover documents
+
+## Handover Artifacts
+
+Handover artifacts reduce the amount of context that must be rediscovered.
+
+As artifact quality increases, reconstruction cost decreases.
+
+---
+
+# 5. Human-AI Division of Labor
+
+## Human as Long-Term Context Manager
+
+Humans maintain long-term goals, priorities, and research direction.
+
+Humans are therefore responsible for preserving continuity across time.
+
+## AI as Context Processor
+
+AI systems process available context and generate outputs.
+
+Their effectiveness depends heavily on the quality of accessible context.
+
+## Collaboration Efficiency
+
+Maximum collaboration efficiency occurs when:
+
+- Humans preserve context.
+- AI systems process context.
+- Reconstruction cost is minimized.
+
+---
+
+# 6. Research Predictions
+
+**Prediction 1:** Better documentation reduces token consumption.
+
+**Prediction 2:** Recoverable Context reduces reconstruction cost.
+
+**Prediction 3:** Repository-centered collaboration is more token-efficient than conversation-centered collaboration.
+
+**Prediction 4:** Higher handover quality increases research productivity.
+
+**Prediction 5:** Context loss produces measurable increases in token expenditure.
+
+---
+
+# 7. Relationship to HACTT and ARHP
+
+HACTT explains **what** must be transferred.
+
+ARHP explains **how** transfer should occur.
+
+Token Economics explains **why** efficient transfer matters.
+
+```
+HACTT
+  ↓
+Context Transfer
+
+ARHP
+  ↓
+Context Transfer Protocol
+
+Token Economics
+  ↓
+Context Transfer Cost
+```
+
+Together, the three frameworks describe complementary aspects of long-term Human-AI collaboration.
+
+---
+
+# Conclusion
+
+Human-AI collaboration is constrained not only by intelligence, but also by the **cost of context reconstruction**.
+
+By viewing tokens as economic resources and reconstruction as an operational cost, researchers can better understand the value of documentation, repositories, and handover protocols.
+
+The central claim of Token Economics is simple:
+
+> Reducing context reconstruction cost increases collaboration efficiency.
