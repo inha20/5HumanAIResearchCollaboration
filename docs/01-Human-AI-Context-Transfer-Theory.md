@@ -1,46 +1,64 @@
-# Human-AI Context Transfer Theory
+# Human-AI Context Transfer Theory (HACTT)
 
 ## Abstract
 
-Long-term Human-AI collaboration depends not only on memory preservation but also on the ability to transfer context across time, participants, systems, and repositories. This document proposes Human-AI Context Transfer Theory (HACTT), which argues that sustainable collaboration emerges when research context can move efficiently between humans, AI systems, artifacts, and future collaborators. Under this framework, repositories, README files, handover documents, research logs, reminders, and project memories are interpreted as context transfer mechanisms rather than simple storage systems.
+Human-AI Context Transfer Theory (HACTT) was developed through observations gathered during a long-term Human-AI research collaboration program. While initially derived from a specific research case, the theory aims to explain general patterns of context transfer across humans, AI systems, future collaborators, and repositories.
+
+HACTT argues that research continuity depends more on context recoverability than on information preservation alone. The theory introduces the concept of a Minimum Context Unit consisting of Goal, State, History, and Next Action, and proposes a general architecture describing how context moves between participants through artifacts and repositories.
 
 ---
 
-# 1. Introduction
+# 1. The Continuity Problem
 
-## 1.1 The Context Problem
+Research projects frequently outlive individual work sessions, devices, AI systems, and even the researchers who originally created them.
 
-Long-term research frequently spans multiple sessions, devices, repositories, and AI systems. During these transitions, information may remain available while usable context becomes inaccessible.
+Although information may remain preserved, collaboration often fails when context becomes unavailable.
 
-The central challenge is therefore not information storage alone.
+HACTT therefore begins with a distinction:
 
-The central challenge is context transfer.
-
-## 1.2 Central Claim
-
-> Long-term Human-AI collaboration succeeds when research context can be transferred efficiently across time, participants, and systems.
+Information Preservation does not necessarily imply Context Recoverability.
 
 ---
 
-# 2. Context and Information
+# 2. Defining Context
 
-## 2.1 Information
+HACTT defines context as:
 
-Information includes documents, notes, files, and historical records.
+> The set of information required to continue a task, project, or research program.
 
-Information answers:
+## 2.1 Goal
 
-> What exists?
+Why does the project exist?
 
-## 2.2 Context
+## 2.2 State
 
-Context includes goals, relationships, assumptions, current status, and research direction.
+What is the current condition of the project?
 
-Context answers:
+## 2.3 History
 
-> What does this mean and why does it matter?
+How did the project reach its current state?
 
-A key observation is that information may survive while context disappears.
+## 2.4 Next Action
+
+What should happen next?
+
+## 2.5 Minimum Context Unit
+
+HACTT proposes:
+
+Context = Goal + State + History + Next Action
+
+### Justification
+
+Goal without State cannot explain current progress.
+
+State without Goal lacks meaning.
+
+History without Next Action cannot support continuation.
+
+Next Action without Goal lacks direction.
+
+Therefore a project becomes fully recoverable only when all four components are available.
 
 ---
 
@@ -63,129 +81,146 @@ These observations suggested that collaboration continuity depends on context mo
 
 # 4. Core Propositions
 
-## Proposition 1
+P1. Information can remain stored while context becomes unavailable.
 
-Information can remain stored while context becomes unavailable.
+P2. Research continuity depends more on context recoverability than on information preservation alone.
 
-## Proposition 2
+P3. Artifacts function as context transfer mechanisms.
 
-Research continuity depends more on context recoverability than on information preservation alone.
+P4. Future-Self Collaboration is a special case of context transfer.
 
-## Proposition 3
+P5. AI-to-AI handover becomes possible when context is externalized.
 
-Artifacts function as context transfer mechanisms.
+P6. Context transfer efficiency determines reconstruction cost.
 
-## Proposition 4
+P7. Context consists of Goal, State, History, and Next Action.
 
-Future-Self Collaboration is a special case of context transfer.
+P8. Different artifacts preserve different components of context.
 
-## Proposition 5
+P9. Full recoverability requires Goal, State, History, and Next Action simultaneously.
 
-AI-to-AI handover becomes possible when context is externalized into artifacts.
+P10. Information preservation does not guarantee recoverability.
 
-## Proposition 6
-
-Context transfer efficiency determines reconstruction cost.
+P11. Repositories function as Context Infrastructure rather than individual artifacts.
 
 ---
 
-# 5. Context Transfer Pathways
+# 5. Recoverability
 
-## 5.1 Human → Future Human
+HACTT defines Recoverability as:
 
-README files, research logs, roadmaps, and reminders enable communication across time.
+> The ability to reconstruct sufficient context to continue a task, project, or research program.
 
-## 5.2 Human → AI
+Recoverability is distinct from information preservation.
 
-Researchers transfer context through prompts, repositories, documentation, and handover artifacts.
+Files may survive while the ability to continue work disappears.
 
-## 5.3 AI → Human
-
-AI systems reconstruct and return context through summaries, explanations, and planning documents.
-
-## 5.4 AI → AI
-
-Repositories and handover artifacts allow knowledge transfer between different AI systems.
-
-## 5.5 Repository → Participant
-
-Repositories act as persistent context sources that can onboard both humans and AI systems.
+Research continuity therefore depends on recoverability rather than storage alone.
 
 ---
 
-# 6. Context Transfer Artifacts
+# 6. Context Transfer Architecture
 
-## README Files
-Repository identity preservation.
+HACTT proposes the following architecture:
 
-## Handover Documents
-Transfer of active research state.
+Context Source
+↓
+Context Encoding
+↓
+Transfer Artifact
+↓
+Context Reconstruction
+↓
+Context Receiver
 
-## Research Logs
-Historical reconstruction support.
+Context is not transferred directly.
 
-## Portfolio Repositories
-Program-level context integration.
+It is encoded into artifacts and later reconstructed by another participant.
+
+---
+
+# 7. Artifact-Context Matrix
+
+README primarily preserves Goal.
+
+STATUS documents primarily preserve State.
+
+Research Logs primarily preserve History.
+
+NEXT_ACTION documents primarily preserve future actions.
+
+Handover Documents preserve all four components simultaneously.
+
+Repositories integrate multiple artifacts into a unified context infrastructure.
+
+---
+
+# 8. Real Cases from HARCT Development
+
+## Future-Self Collaboration
+
+Present researchers frequently create notes, reminders, and logs for future versions of themselves.
+
+HACTT interprets this as context transfer across time.
+
+## Repository-Centered Collaboration
+
+Multiple AI systems may participate in the same research program while sharing a repository.
+
+The repository remains while individual AI systems change.
+
+## Context Preservation Requests
+
+Requests such as "save this" can be interpreted as requests to preserve recoverable context rather than raw information.
 
 ## Reminder Systems
-Temporal context restoration.
 
-## Project Memories
-Long-term observation preservation.
+Reminders function as context transfer artifacts connecting present and future participants.
 
----
+## Multi-AI Handover
 
-# 7. General Context Transfer Model
-
-A generalized transfer pattern emerges:
-
-Participant
-↓
-Artifact
-↓
-Future Participant
-
-The participant may be a human researcher, future self, AI system, or future AI system.
-
-Artifacts function as bridges between otherwise disconnected contexts.
+Research may continue across multiple AI systems when context is externalized into persistent artifacts.
 
 ---
 
-# 8. Failure Modes
+# 9. Predictions
 
-Context transfer may fail through:
+Prediction 1:
+Higher README quality reduces reconstruction time.
 
-- Missing documentation
-- Fragmented repositories
-- Goal loss
-- Incomplete handovers
-- High reconstruction cost
+Prediction 2:
+Loss of Goal, State, History, or Next Action increases reconstruction cost.
 
-When transfer fails, collaboration continuity declines even if information remains stored.
+Prediction 3:
+AI replacement does not necessarily reduce continuity if artifact quality remains high.
+
+Prediction 4:
+Repository-centered projects achieve higher recoverability than conversation-centered projects.
+
+Prediction 5:
+Higher handover quality reduces AI-to-AI transition cost.
 
 ---
 
-# 9. Relationship to HARCT
+# 10. Relationship to HARCT
 
-Human-AI Context Transfer Theory functions as a supporting theory within Human-AI Research Continuity Theory (HARCT).
+HACTT was discovered and formalized during the development of HARCT.
 
 Within HARCT:
 
 - Goal Preservation determines what should be transferred.
-- Context Transfer moves knowledge.
+- HACTT explains how context moves.
 - Externalized Memory stores transferable context.
-- Reconstruction Cost measures transfer efficiency.
+- Reconstruction Cost measures recovery effort.
+
+Although developed through HARCT, HACTT is intended as a general theory of context transfer applicable beyond a single research program.
 
 ---
 
-# 10. Context Transfer Hypothesis
+# Conclusion
 
-> Research continuity increases when context transfer mechanisms reduce the effort required to restore research context across time, participants, and systems.
+Human-AI collaboration is sustained not by memory alone but by recoverable context.
 
----
+Repositories, README files, handover documents, reminders, research logs, and project memories should therefore be understood as components of a broader context transfer infrastructure.
 
-# 11. Conclusion
-
-Human-AI collaboration is sustained by systems capable of transferring context.
-
-Repositories, README files, handover documents, reminders, and project memories should therefore be understood as context transfer infrastructure rather than simple storage systems.
+HACTT proposes that research continuity emerges when context can be effectively transferred, reconstructed, and reused across time, participants, and systems.
