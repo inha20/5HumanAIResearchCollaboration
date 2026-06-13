@@ -174,6 +174,7 @@ Paper 5: Human-AI Research Collaboration   ← This repository
 |---|---|---|
 | 1.0 | 2026-06-06 | Initial creation — Session 10 |
 | 1.1 | 2026-06-07 | Session 16 — GitHub Pages 배포 완료 기록; Phase 4 콘텐츠 개선 할 일 등록; 7월 일정 앞당김 |
+| 1.2 | 2026-06-07 | Session 17 — paper.md 대규모 통합 편집: §4.7, §4.8, §7.8, §8.12, §8.13, §9.1 재구조화, §12.11, §13.4 신규 추가; docs/ 핵심 내용 전체 paper.md 통합 완료 (docs/ 삭제 가능 상태) |
 
 ---
 
