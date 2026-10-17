@@ -2197,7 +2197,7 @@ rather than:
 
 ## 12.4 Goal Preservation as the Foundation
 
-A key finding of this study is the primacy of goal preservation over information preservation.
+A key observation of this study, proposed as a hypothesis (Section 5.6) and not yet tested (Prediction 5), is the apparent primacy of goal preservation over information preservation.
 
 When goals survived interruptions, context could be reconstructed.
 
@@ -2253,7 +2253,7 @@ The principal contribution of HARCT is the integration of these frameworks under
 
 ## 12.8 Novelty Assessment
 
-The following assessment classifies each major concept by publication-level originality, based on comparison with existing literature in Distributed Cognition, Extended Mind, Knowledge Management, PKM, HCI, and CSCW.
+The following assessment classifies each major concept by publication-level originality, based on a limited, non-systematic comparison with existing literature in Distributed Cognition, Extended Mind, Knowledge Management, PKM, HCI, and CSCW.
 
 | Concept | Novelty | Basis for Assessment |
 |---|---|---|
@@ -2498,7 +2498,7 @@ Continuity emerged from interactions among three components: human goal memory, 
 
 **Finding 4: Reconstruction Cost Determines Efficiency**
 
-Documentation quality directly determines the effort required to restore research context. This makes documentation quality an economic variable, not merely an administrative practice.
+In this case, documentation quality appeared to determine the effort required to restore research context; this relation has not yet been tested (Section 13.4). This makes documentation quality an economic variable, not merely an administrative practice.
 
 **Finding 5: Future-Self Collaboration Is Real**
 
@@ -2587,7 +2587,7 @@ Three scenarios for the development of this research program are identified:
 
 *Scenario C — Broader Distributed Cognition Theory:* The three-component architecture (human / AI / artifact) generalizes into a broader theory of distributed cognition systems that include AI participants — extending existing distributed cognition and Extended Mind frameworks in ways relevant to the emerging AI-integrated research environment.
 
-Scenario B appears most probable given current evidence. Scenario C represents the highest-value long-term outcome if the framework survives empirical scrutiny and cross-disciplinary extension.
+Given the single-case, uncontrolled evidence presented here, only Scenario A is directly supported; Scenario B depends on the validation studies proposed above. Scenario C represents the highest-value long-term outcome if the framework survives empirical scrutiny and cross-disciplinary extension.
 
 ---
 

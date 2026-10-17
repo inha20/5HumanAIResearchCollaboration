@@ -96,7 +96,7 @@ Paper 5 has a **self-referential quality**: the collaboration process used to bu
 
 ---
 
-## Novelty Assessment
+## Novelty Assessment (self-assessed; no formal reference list yet)
 
 | Concept | Novelty |
 |---|---|
@@ -146,7 +146,7 @@ This repository is part of the **Structure Recognition Research Program**.
 | [4StructureRecognitionTheory](https://github.com/inha20/4StructureRecognitionTheory) | Theoretical Hub |
 | [5HumanAIResearchCollaboration](https://github.com/inha20/5HumanAIResearchCollaboration) | Methodological Meta-layer ← You are here |
 
-**Master Handover Document:** [MasterHandoverDocument.md](https://github.com/inha20/Research-Portfolio/blob/main/ProjectManagement/MasterHandoverDocument.md)
+**AI 단일 진입점:** [SESSION_START.md](https://github.com/inha20/inha20/blob/main/SESSION_START.md)
 
 ---
 

@@ -71,7 +71,6 @@ Paper 5: Human-AI Research Collaboration   ← This repository
 | `paper.md` | ✅ Complete | Full paper — 13 chapters, HARCT framework |
 | `index.html` | ✅ Complete | GitHub Pages — full research summary |
 | `README.md` | ✅ Complete | Repository overview, abstract, chapter listing |
-| `.nojekyll` | ✅ | GitHub Pages raw file serving |
 | `HANDOVER.md` | ✅ | This file (Session 10 — 2026-06-06) |
 
 ---
@@ -116,7 +115,7 @@ Paper 5: Human-AI Research Collaboration   ← This repository
 
 ### 🟢 Long-Term
 
-- [ ] docs/ 폴더 정리 — 모든 핵심 내용이 paper.md에 통합됨; docs/ 파일들은 아카이브 또는 삭제 가능
+- [x] docs/ 폴더 정리 — 2026-06-21 커밋 94aff97에서 docs/ 삭제 완료. docs/01–04는 paper.md에 통합됨(각 파일의 Paper Integration Note 기준); docs/05-HARCT-Validation-and-Extension-Agenda.md(Meaning Preservation Theory 확장 의제)는 통합 기록이 없으며 git 이력에서만 복구 가능: `94aff97^:docs/05-HARCT-Validation-and-Extension-Agenda.md`
 - [ ] Target venue: CSCW (primary), CHI (secondary)
 - [ ] If Paper 4 (SRT) matures to journal submission, consider Paper 5 as companion methodology paper
 - [ ] Formalize HARCT variables (RC, GP, CT, RCost, EM) with testable metrics
@@ -139,7 +138,7 @@ Paper 5: Human-AI Research Collaboration   ← This repository
    Always frame as a theoretical framework, never as a confirmed conclusion.
 
 5. **This repository currently contains no figures.**  
-   If figures are added in the future, follow `ImageStandardizationGuide.md` (Research-Portfolio).
+   If figures are added in the future, follow the figure creation rule ("Image Creation Rule") in `inha20/SESSION_START.md`.
 
 6. **paper.md and index.html must remain consistent.**  
    If paper.md is updated, review index.html for synchronization.
@@ -159,12 +158,12 @@ Paper 5: Human-AI Research Collaboration   ← This repository
 
 ## Cross-References
 
-- [MasterHandoverDocument](../Research-Portfolio-main/ProjectManagement/MasterHandoverDocument.md)
-- [AIHandoverInstructions](../Research-Portfolio-main/ProjectManagement/AIHandoverInstructions.md)
-- [ProjectStatus](../Research-Portfolio-main/ProjectManagement/ProjectStatus.md)
-- [ANTIGRAVITY RESEARCH_STATUS](../ANTIGRAVITY-main/RESEARCH_STATUS.md)
-- [Paper 4 HANDOVER](../4StructureRecognitionTheory-main/HANDOVER.md)
-- [Research-Portfolio README](../Research-Portfolio-main/README.md)
+- [MasterHandoverDocument → SESSION_START.md](../inha20/SESSION_START.md)
+- [AIHandoverInstructions → SESSION_START.md](../inha20/SESSION_START.md)
+- [ProjectStatus → SESSION_START.md](../inha20/SESSION_START.md)
+- [ANTIGRAVITY RESEARCH_STATUS → README.md](../ANTIGRAVITY/README.md)
+- [Paper 4 HANDOVER](../4StructureRecognitionTheory/HANDOVER.md)
+- [Research-Portfolio README](../Research-Portfolio/README.md)
 
 ---
 
@@ -180,4 +179,4 @@ Paper 5: Human-AI Research Collaboration   ← This repository
 
 *This repository is the methodological meta-layer of the Structure Recognition Research Program.*  
 *It documents the Human-AI collaboration process that produced Papers 1–4.*  
-*Cross-reference: Research-Portfolio-main/ProjectManagement/MasterHandoverDocument.md*
+*Cross-reference: inha20/SESSION_START.md*
