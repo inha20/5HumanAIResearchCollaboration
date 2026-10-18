@@ -26,7 +26,7 @@ In such environments, neither human memory nor AI memory alone is sufficient to 
 
 This study addresses that problem through a theoretical framework: **Human-AI Research Continuity Theory (HARCT)**.
 
-HARCT argues that the primary challenge of long-term Human-AI research is not intelligence but research continuity — the ability to preserve, restore, and transfer research context across time, sessions, AI systems, and repositories.
+HARCT argues that the primary challenge of long-term Human-AI research is not intelligence alone but research continuity — the ability to preserve, restore, and transfer research context across time, sessions, AI systems, and repositories.
 
 The present study emerged from a multi-repository research program involving mathematical theory development, repository-based knowledge management, and collaboration with multiple AI systems. Throughout this process, challenges related to memory preservation, context loss, token limitations, and AI transitions repeatedly appeared. These observations motivated a systematic investigation of long-term Human-AI collaboration.
 
@@ -640,6 +640,8 @@ Instead, it can be preserved within **memory repositories**.
 
 > A Memory Repository is any artifact capable of preserving research context and supporting future context restoration.
 
+In this paper the term covers any such artifact, not only a version-controlled repository. The research program studied here used Git repositories as its main memory repositories.
+
 Examples include:
 
 - GitHub repositories
@@ -786,7 +788,7 @@ Reconstruction Cost Theory (Chapter 7) explains why the effort at Stage 4 become
 
 ## 4.8 Core Propositions
 
-The following propositions constitute the formal theoretical core of HARCT. They are theoretical commitments of HARCT v1.0, each subject to empirical evaluation as described in Chapter 13.
+The following propositions constitute the core theoretical statements of HARCT (not yet formalized; see Section 13.4). They are theoretical commitments of HARCT v1.0, each subject to empirical evaluation as described in Chapter 13.
 
 **P1.** Information can remain stored while context becomes unavailable.
 
@@ -879,8 +881,8 @@ When goals disappeared, even complete archives became difficult to use effective
 The relationship between the two is therefore asymmetric:
 
 ```
-Goal Survival → Context Reconstruction → Research Continuation
-Goal Loss     → Archive Without Direction → Research Stagnation
+Goal Survival + Available Artifacts → Context Reconstruction → Research Continuation
+Goal Loss                           → Archive Without Direction → Research Stagnation
 ```
 
 ---
@@ -909,7 +911,7 @@ The crucial observation is this:
 
 A major observation from the research program was that future versions of the researcher frequently became active participants in the collaboration process.
 
-Traditional collaboration research assumes collaboration between multiple individuals existing at the same point in time.
+Traditional collaboration research often assumes collaboration between multiple individuals existing at the same point in time.
 
 The present study suggests a different possibility:
 
@@ -1256,7 +1258,7 @@ It is cooperation among three components:
 - AI Reasoning Systems
 - External Memory Repositories
 
-Together these components form the minimum architecture required for sustainable long-term research.
+Together these components are proposed as the minimum architecture required for sustainable long-term Human-AI research.
 
 ---
 
@@ -1344,7 +1346,7 @@ Several mechanisms emerged naturally during the research program.
 
 Each mechanism reduced future reconstruction cost.
 
-Documentation that appears costly in the present consistently reduces greater costs in the future.
+Documentation that appears costly in the present tends to reduce greater costs in the future when it is kept current.
 
 ---
 
@@ -1445,14 +1447,14 @@ Tokens consumed in recovering previously known context: re-reading repository st
 
 **The Economic Implication**
 
-Every reconstruction token represents a cost that effective documentation would have eliminated.
+Many reconstruction tokens represent a cost that effective documentation could have reduced.
 
 ```
 Poor Documentation → High Reconstruction Token Cost → Lower Collaboration Efficiency
 Good Documentation → Low Reconstruction Token Cost → Higher Collaboration Efficiency
 ```
 
-This reframing makes Reconstruction Cost Theory directly measurable. Token consumption during a session can be classified as productive or reconstructive. The ratio of reconstructive tokens to total tokens consumed functions as an empirical indicator of documentation quality.
+This reframing makes Reconstruction Cost Theory directly measurable. Token consumption during a session can be classified as productive or reconstructive. The ratio of reconstructive tokens to total tokens consumed can serve as a candidate outcome measure of reconstruction cost, to be related to a documentation-quality measure defined independently of it.
 
 As research duration increases, cumulative reconstruction token expenditure becomes a dominant factor in overall collaboration efficiency — more significant in year-scale programs than in week-scale projects.
 
@@ -1627,7 +1629,7 @@ Knowledge became attached to artifacts rather than specific models.
 
 Consequently:
 
-- AI systems became replaceable.
+- AI systems became more readily replaceable (a qualitative observation, not yet measured; see Prediction 7, Section 12.13).
 - Research continuity improved.
 - Context recovery became faster.
 - Long-term sustainability increased.
@@ -1711,7 +1713,7 @@ First, no single artifact type provides complete context coverage. A research pr
 
 Second, Handover Documents and structured Repositories are uniquely capable of preserving all four components simultaneously. Their value is disproportionate to their apparent complexity.
 
-Third, the matrix provides a diagnostic tool. A research program that lacks any artifact type in the matrix has a predictable vulnerability to context loss at the corresponding component. This vulnerability can be assessed before a handover occurs rather than discovered after context is lost.
+Third, the matrix provides a diagnostic tool. A research program that lacks all artifact types in the matrix that cover a given component has a predictable vulnerability to context loss at that component. This vulnerability can be assessed before a handover occurs rather than discovered after context is lost.
 
 The matrix is a direct operationalization of Proposition P8 (different artifacts preserve different components of context) and Proposition P9 (full recoverability requires all four components simultaneously).
 
@@ -1796,7 +1798,7 @@ Chapter 7 established Reconstruction Cost Theory as a general economic framework
 
 This chapter examines the same relationship from an empirical angle — through the observable mechanics of token limits and context loss within active research sessions.
 
-Token constraints are the computational instantiation of the reconstruction cost problem. They make context loss concrete, measurable, and immediately consequential. Understanding how they operate provides empirical grounding for the theoretical claims of Chapter 7.
+Token constraints are the computational instantiation of the reconstruction cost problem. They make context loss concrete, measurable, and immediately consequential. Understanding how they operate offers illustrative, observational support for the theoretical claims of Chapter 7.
 
 Long-term Human-AI collaboration is therefore constrained not only by human memory limitations but also by the computational limitations of AI systems.
 
@@ -1965,7 +1967,7 @@ Different AI systems gradually assumed different roles within the research progr
 
 Over time, a distributed collaboration structure emerged in which different AI systems specialized in different functions.
 
-This observation directly supports Cognitive Labor Division Theory (Chapter 6).
+This observation directly supports the Cognitive Labor Division analysis (Section 6.2).
 
 ---
 
@@ -2223,7 +2225,7 @@ Future collaboration systems should treat reconstruction cost minimization as a 
 
 Traditional collaboration research assumes collaboration among contemporaneous participants.
 
-The present study establishes Future-Self Collaboration as a distinct and important form of collaboration.
+The present study proposes Future-Self Collaboration as a distinct form of collaboration worth further investigation.
 
 The future version of the researcher frequently became a recipient of information created in the present.
 
@@ -2237,7 +2239,7 @@ HARCT shares conceptual territory with several existing frameworks.
 
 **Distributed Cognition** (Hutchins 1995)
 
-HARCT's three-component cognitive architecture resembles distributed cognition, but introduces the specific asymmetry between human goal memory and AI reasoning memory. This asymmetry is not present in standard distributed cognition models.
+HARCT's three-component cognitive architecture resembles distributed cognition, but introduces the specific asymmetry between human goal memory and AI reasoning memory. No treatment of this asymmetry was identified in standard distributed cognition models, which predate LLM-based participants.
 
 **Extended Mind** (Clark & Chalmers 1998)
 

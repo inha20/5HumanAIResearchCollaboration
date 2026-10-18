@@ -14,7 +14,7 @@
 
 Long-term Human-AI collaboration presents challenges that extend beyond the capabilities of either human memory or AI memory alone. This study investigates long-term Human-AI research collaboration through a multi-repository research program and proposes **Human-AI Research Continuity Theory (HARCT)** as a unified explanatory framework: long-term Human-AI research collaboration is fundamentally a problem of research continuity rather than intelligence alone.
 
-HARCT is supported by four theoretical components. **Goal Preservation Theory** argues that preserving research goals is more fundamental than preserving information — goals enable reconstruction, while information without direction becomes an unusable archive. **Cognitive Architecture Theory** identifies a three-component distributed system in which humans preserve goals, AI systems perform reasoning and reconstruction, and artifacts preserve context. **Reconstruction Cost Theory** frames documentation quality as an economic variable that directly determines collaboration efficiency. **Externalized Memory** describes how context is stored outside active participants through persistent artifacts.
+HARCT is supported by four theoretical components. **Goal Preservation Theory** argues that preserving research goals is more fundamental than preserving information — goals enable reconstruction, while information without direction becomes an archive that is difficult to use effectively. **Cognitive Architecture Theory** identifies a three-component distributed system in which humans preserve goals, AI systems perform reasoning and reconstruction, and artifacts preserve context. **Reconstruction Cost Theory** frames documentation quality as an economic variable that directly determines collaboration efficiency. **Externalized Memory** describes how context is stored outside active participants through persistent artifacts.
 
 ---
 
@@ -112,14 +112,14 @@ Paper 5 has a **self-referential quality**: the collaboration process used to bu
 
 ## HARCT Testable Predictions
 
-| Prediction | Claim |
+| Prediction (paper §12.13; not the propositions P1–P11 of §4.8) | Claim |
 |---|---|
 | P1 | Better repository infrastructure → higher continuity |
 | P2 | Higher documentation quality → lower reconstruction cost |
 | P3 | Structured handover artifacts → less context loss at AI transitions |
 | P4 | Future-oriented artifacts → faster context recovery |
 | P5 | Goal preservation → projects survive longer interruptions |
-| P6 | Reconstruction cost scales with research duration |
+| P6 | Reconstruction cost becomes an increasingly dominant factor as research duration grows |
 | P7 | Artifact-centered knowledge → higher AI replaceability |
 | P8 | Stable collaboration protocols → reduced context re-establishment cost |
 
@@ -130,8 +130,9 @@ Paper 5 has a **self-referential quality**: the collaboration process used to bu
 | Item | State |
 |---|---|
 | Main paper (`paper.md`) | ✅ Complete — 13 chapters |
-| GitHub Pages (`index.html`) | 🔧 Pending setup |
+| GitHub Pages (`index.html`) | ✅ Deployed |
 | README (`README.md`) | ✅ This file |
+| Evidence status | Exploratory — single research program (n=1); HARCT is a theoretical framework, not an empirically validated result (paper §12.10) |
 
 ---
 
