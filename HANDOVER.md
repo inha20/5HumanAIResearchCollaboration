@@ -104,22 +104,22 @@ Paper 5: Human-AI Research Collaboration   ← This repository
 
 ### 🟠 Phase 4 콘텐츠 개선 (Active — Session 17)
 
-- [ ] **Add formal references section** to `paper.md` — Hutchins 1995, Clark & Chalmers 1998, CSCW handover literature, PKM literature (CRITICAL for journal submission)
-- [ ] **Add methodology section** (~1–1.5p) — frame as Grounded Theory or Autoethnographic Case Study
-- [ ] **Add figures** — 3-component cognitive architecture diagram, Context Transfer Architecture (5-stage), Failure Mode Hierarchy
-- [ ] Consider adding a Case Study Appendix — detailed session logs as evidence for HARCT claims
+- [x] **Add formal references section** to `paper.md` — Hutchins 1995, Clark & Chalmers 1998, CSCW handover literature, PKM literature (CRITICAL for journal submission) (8번 논문 "참고문헌 / References" 절에 반영 — Hutchins 1995, Clark & Chalmers 1998, Jones 2007 수록; CSCW·업무 인계 문헌은 8번 1.5절에서 미조사로 밝힘; 이 저장소의 `paper.md`에는 추가하지 않음)
+- [x] **Add methodology section** (~1–1.5p) — frame as Grounded Theory or Autoethnographic Case Study (8번 논문 4.7절에 반영 — 자기 민족지적 사례 연구로 방법을 밝힘; 이 저장소의 `paper.md`에는 별도 절을 추가하지 않음)
+- [x] ~~**Add figures** — 3-component cognitive architecture diagram, Context Transfer Architecture (5-stage), Failure Mode Hierarchy~~ — 종결(2026-10-19): 이 저장소는 보관됨, 이 작업은 수행하지 않았으며 새 그림은 만들지 않기로 했다
+- [x] Consider adding a Case Study Appendix — detailed session logs as evidence for HARCT claims (8번 논문 4.7절의 에피소드 1~3에 반영; 세션 로그 원문은 공개하지 않음)
 - [x] ~~Verify all GitHub Pages internal links after deployment~~ — **배포 완료; 내부 링크 검증 실행 가능**
-- [ ] GitHub Pages 내부 링크 검증 (`index.html` 네비게이션 동작 확인)
-- [ ] `index.html` SEO 메타태그 삽입 (title, description, keywords)
-- [ ] `index.html` 내용을 paper.md 신규 섹션(4.7, 4.8, 7.8, 8.12, 8.13)과 동기화
+- [x] GitHub Pages 내부 링크 검증 (`index.html` 네비게이션 동작 확인) (링크 점검 결과 깨진 링크 0건 — 2026-10-19, 저장소 파일 기준)
+- [x] `index.html` SEO 메타태그 삽입 (title, description, keywords) (확인 2026-10-19: `index.html`에 title·description·keywords 메타태그가 이미 있음)
+- [x] ~~`index.html` 내용을 paper.md 신규 섹션(4.7, 4.8, 7.8, 8.12, 8.13)과 동기화~~ — 종결(2026-10-19): 이 저장소는 보관됨, 이 작업은 수행하지 않았으며 후속은 7·8번에서 다룬다
 
 ### 🟢 Long-Term
 
 - [x] docs/ 폴더 정리 — 2026-06-21 커밋 94aff97에서 docs/ 삭제 완료. docs/01–04는 paper.md에 통합됨(각 파일의 Paper Integration Note 기준); docs/05-HARCT-Validation-and-Extension-Agenda.md(Meaning Preservation Theory 확장 의제)는 통합 기록이 없으며 git 이력에서만 복구 가능: `94aff97^:docs/05-HARCT-Validation-and-Extension-Agenda.md`
-- [ ] Target venue: CSCW (primary), CHI (secondary)
-- [ ] If Paper 4 (SRT) matures to journal submission, consider Paper 5 as companion methodology paper
-- [ ] Formalize HARCT variables (RC, GP, CT, RCost, EM) with testable metrics
-- [ ] Conduct comparative study: programs with vs. without structured handover artifacts
+- [x] ~~Target venue: CSCW (primary), CHI (secondary)~~ — 종결(2026-10-19): 이 저장소는 보관됨, 이 작업은 수행하지 않았으며 후속은 7·8번에서 다룬다
+- [x] ~~If Paper 4 (SRT) matures to journal submission, consider Paper 5 as companion methodology paper~~ — 종결(2026-10-19): 이 저장소는 보관됨, 이 작업은 수행하지 않았으며 후속은 7·8번에서 다룬다
+- [x] ~~Formalize HARCT variables (RC, GP, CT, RCost, EM) with testable metrics~~ — 종결(2026-10-19): 이 저장소는 보관됨, 이 작업은 수행하지 않았으며 후속은 7·8번에서 다룬다 (8번 7.2절 향후 과제 5 참조)
+- [x] ~~Conduct comparative study: programs with vs. without structured handover artifacts~~ — 종결(2026-10-19): 이 저장소는 보관됨, 이 작업은 수행하지 않았으며 후속은 7·8번에서 다룬다 (8번 7.2절 향후 과제 5 참조)
 
 ---
 
@@ -158,12 +158,12 @@ Paper 5: Human-AI Research Collaboration   ← This repository
 
 ## Cross-References
 
-- [MasterHandoverDocument → SESSION_START.md](../inha20/SESSION_START.md)
-- [AIHandoverInstructions → SESSION_START.md](../inha20/SESSION_START.md)
-- [ProjectStatus → SESSION_START.md](../inha20/SESSION_START.md)
-- [ANTIGRAVITY RESEARCH_STATUS → README.md](../ANTIGRAVITY/README.md)
-- [Paper 4 HANDOVER](../4StructureRecognitionTheory/HANDOVER.md)
-- [Research-Portfolio README](../Research-Portfolio/README.md)
+- [MasterHandoverDocument → SESSION_START.md](https://github.com/inha20/inha20/blob/main/SESSION_START.md)
+- [AIHandoverInstructions → SESSION_START.md](https://github.com/inha20/inha20/blob/main/SESSION_START.md)
+- [ProjectStatus → SESSION_START.md](https://github.com/inha20/inha20/blob/main/SESSION_START.md)
+- [ANTIGRAVITY RESEARCH_STATUS → README.md](https://github.com/inha20/ANTIGRAVITY/blob/main/README.md)
+- [Paper 4 HANDOVER](https://github.com/inha20/4StructureRecognitionTheory/blob/main/HANDOVER.md)
+- [Research-Portfolio README](https://github.com/inha20/Research-Portfolio/blob/main/README.md)
 
 ---
 
