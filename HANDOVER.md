@@ -137,8 +137,7 @@ Paper 5: Human-AI Research Collaboration   ← This repository
 4. **HARCT is exploratory, not established.**  
    Always frame as a theoretical framework, never as a confirmed conclusion.
 
-5. **This repository currently contains no figures.**  
-   If figures are added in the future, follow the figure creation rule ("Image Creation Rule") in `inha20/SESSION_START.md`.
+5. **This repository currently contains no figures.**
 
 6. **paper.md and index.html must remain consistent.**  
    If paper.md is updated, review index.html for synchronization.
